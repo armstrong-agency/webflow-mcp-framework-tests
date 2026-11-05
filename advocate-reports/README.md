@@ -1,6 +1,6 @@
 # Advocate reports
 
-Three Claude agents were each assigned one framework and asked to make its strongest honest case for AI-agent work through the Webflow MCP. They read the first-round probe results and the framework docs, and they looked for where my argument would fail. They are not statements from Finsweet, No-Code Supply Co., or Timothy Ricks.
+Three Claude agents were each assigned one framework and asked to make its strongest honest case for AI-agent work through the Webflow MCP. They read the first-round probe results and the framework docs, and they looked for where the author's argument would fail. They are not statements from Finsweet, No-Code Supply Co., or Timothy Ricks.
 
 | Report | Framework |
 | --- | --- |
@@ -10,7 +10,7 @@ Three Claude agents were each assigned one framework and asked to make its stron
 
 ## How to read them
 
-Each agent was told that I believed Client-First wins and planned to argue that publicly. That is why the reports speak to "Emmett" and list arguments to avoid. They are published unedited.
+Each agent was told that the author believed Client-First wins and planned to argue that publicly. That is why the reports speak to "Emmett" and list arguments to avoid. They are published unedited.
 
 All three were written on 2026-11-02, before rounds 2 to 4 and the model evals, so some of their claims are out of date:
 

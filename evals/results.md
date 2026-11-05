@@ -2,7 +2,7 @@
 
 These evals asked what Claude models know about Client-First, Mast, and Lumos on their own, with no Webflow MCP and no site. There were 228 separate `claude -p` calls, each with no tools, MCP, skills, or settings, a neutral system prompt, and an empty working folder. No call failed. The scripts, fixtures, raw outputs, and scores are all in this folder.
 
-First person in this file means the Claude agent that ran the evals, and "lead agent" means the Claude session that coordinated it. See the disclosures in the [repo README](../README.md).
+"Eval agent" means the Claude agent that ran the evals, and "lead agent" means the Claude session that coordinated it. See the disclosures in the [repo README](../README.md).
 
 ## What was predicted, and what happened
 
@@ -19,7 +19,7 @@ The predictions are in `PREREGISTRATION.md`. "Advocate" and "planning notes" com
 
 ## How each eval worked
 
-**Writing from memory (E1a).** There were 10 layout tasks, 3 frameworks, 2 models (`claude-haiku-5-5` and `claude-sonnet-5-5`), and 3 samples each, for 180 calls. The prompt named the framework and gave no docs. A script scored each answer against a key: 2 means the right approach, 1 means every class is real but the approach is not ideal, and 0 means at least one class is invented or from another framework. Where a framework has no utility for a task, the right approach is a well-formed custom class. That applies to 4 tasks on Client-First and 1 on Mast. I made one parsing fix after the runs, scoring only the first line of each answer, so a correct answer followed by an unrequested explanation was not zeroed. That moved Client-First from 0.98 to 1.07.
+**Writing from memory (E1a).** There were 10 layout tasks, 3 frameworks, 2 models (`claude-haiku-5-5` and `claude-sonnet-5-5`), and 3 samples each, for 180 calls. The prompt named the framework and gave no docs. A script scored each answer against a key: 2 means the right approach, 1 means every class is real but the approach is not ideal, and 0 means at least one class is invented or from another framework. Where a framework has no utility for a task, the right approach is a well-formed custom class. That applies to 4 tasks on Client-First and 1 on Mast. One parsing fix was made after the runs, scoring only the first line of each answer, so a correct answer followed by an unrequested explanation was not zeroed. That moved Client-First from 0.98 to 1.07.
 
 **Reading a page (E1b).** There was one hand-written page per framework: a hero, then a dark 3-card grid, with class names but no CSS or framework names. Models answered 12 questions in four groups: spacing (4), structure (4), styling variants (3), and one global change. With 3 samples, 2 models, and 3 pages, that made 18 calls. An answer was correct if it named the right element or class and none of the listed wrong ones.
 
@@ -79,9 +79,9 @@ A later review found two mistakes in the revised key. It said Lumos had no text 
 
 The original key and its scores are in `preregistered/scripts/` and `raw/scores-v1.json`.
 
-### Client-First is the default guess
+### Fallback to Client-First names
 
-The finding that matters most is that when a model does not know a framework, it answers in Client-First and Relume vocabulary.
+When a model did not know a framework, it often answered in Client-First and Relume vocabulary.
 
 - Haiku's "Lumos" answers included `padding-global padding-section-large`, `heading-style-h2`, and `container-large`. 14 of its 30 Lumos answers were valid Client-First and invalid Lumos.
 - Sonnet's "Mast" answer for section padding was `padding-global padding-section-large` in 3 of 3 samples. In total, 9 Haiku and 5 Sonnet Mast answers were Client-First classes.
@@ -125,10 +125,10 @@ The drift looks different in each framework:
 ## Limits
 
 - **Small samples.** There are 3 samples per task in the memory test, 6 per question in the reading test, and 10 in the drift test. Only Claude models were used.
-- **I wrote the keys, pages, and summaries.** The Lumos key was revised after the runs, as described above. Bare `u-flex-horizontal` is the one remaining judgment call that would change Lumos's score.
+- **The eval agent wrote the keys, pages, and summaries.** The Lumos key was revised after the runs, as described above. Bare `u-flex-horizontal` is the one remaining judgment call that would change Lumos's score.
 - **Client-First was scored on v2 naming.** Client-First v3 came out shortly before these runs, and its one-class spacing such as `margin-bottom-small` still scores 0 here.
 - **The class checks have limits.** The Lumos key was checked through the MCP. Client-First and Mast were checked later against the published stylesheets of the test sites. Mast did not change, and Client-First moved from 1.07 to about 1.05.
 - **The reading test is hand-written and too easy.** The names describe themselves in every convention, so the result says more about the pages than the frameworks.
 - **The drift summaries contain worked examples**, such as `pricing_card is-featured`, which push models toward the same answers and understate drift for all three. The Mast summary describes base classes plus utilities, which invites more classes per element. That is why the row ignoring `u-` utilities is the fairer comparison.
 - **The planned test of spotting naming violations was not run.**
-- **The tasks and questions are mine.** A Mast or Lumos advocate might pick tasks that favor their framework, such as column spans per breakpoint or theme switching.
+- **The eval agent chose the tasks and questions.** A Mast or Lumos advocate might pick tasks that favor their framework, such as column spans per breakpoint or theme switching.

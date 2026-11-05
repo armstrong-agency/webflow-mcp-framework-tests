@@ -1,38 +1,29 @@
 # Webflow MCP framework tests
 
-These are the tests behind my video, *Why Client-First Is the Best Framework for Webflow MCP*. They compare Client-First, Mast, and Lumos on two questions:
+This repository contains tests comparing Client-First, Mast, and Lumos on two questions:
 
 1. What can an AI agent actually do with each framework through the Webflow MCP?
 2. What do AI models already know about each framework?
 
-The video argues a position, and so does the [My take](#my-take) section below. Everything else here reports what happened, including the results that favor Mast and Lumos, so you can check the data and reach your own conclusion.
+Results are reported as observed, including where each framework did well or badly. The raw model outputs and scoring scripts are included so the eval numbers can be checked.
 
 All tests ran on 2026-11-02 against Webflow MCP beta v2.2.0. The MCP changes often, so treat every result as a snapshot of that version.
 
-## The short version
+## Summary of findings
 
-- **Models know Client-First best.** With no docs, it scored highest on both models, and models often fell back to Client-First names when asked for Mast or Lumos. The lead over Mast is solid. The lead over Lumos is less certain.
-- **The MCP is strongest with classes and weakest with components.** Failed component builds left debris behind on Mast and Lumos, and the slot names the MCP shows are not the names it accepts. Client-First can stay on the class side of that line.
-- **Client-First relies least on formulas.** None of its variables are formulas, and formula variables are something the MCP cannot write.
-- **Mast and Lumos won some tests.** A dark section took 1 write on Lumos and 5 on Client-First. Mast built the hero test in the fewest calls. Lumos lost its H1 after an agent text edit, and Client-First's first grid overflowed at 200% text until it used v3's `grid-autofit`.
-- **These are mostly single runs.** Treat them as observations, not measurements. See [Limits](#limits).
-
-## My take
-
-This section is my opinion. I have used Client-First for years and I contributed to v3, so weigh it with that in mind. I land on Client-First for the MCP for three reasons.
-
-**It keeps agents on the MCP's strongest ground.** Most of the worst MCP problems here were in components. All 5 failed component builds left an orphan behind, slots refused plain elements, and a routine write silently erased a conditional. Client-First does not need components to work, so an agent can do most of its work with classes and styles. Its hero test took 6 calls with no failures, and its first attempt at the icon row took 4 calls where Lumos took 9.
-
-**Models already speak it.** It scored highest on both models, and it had the least naming drift of the three. When a model was unsure, it tended to answer in Client-First names, even when asked for another framework. Haiku did that on 14 of its 30 Lumos answers. I see the same habit on real Lumos sites, although that part is my experience and not a test result.
-
-**Its building blocks are easy for an agent to edit.** Every variable on the Client-First test site can be changed through the MCP, because none of them are formulas. The published v3 cloneable has no formula variables either. v3 also adds the variables and theming that Client-First was missing. In my view, v2 and v3 share the same bones, so I expect most of these results to carry over, but only the grid was tested on v3.
-
-Mast and Lumos have real strengths. Lumos's theming is better than anything I tested on Client-First, and Mast's components held up well in the hero test. The MCP will also improve, and these frameworks will gain the most when it does. For agent work through the MCP today, I still choose Client-First.
+- **Model knowledge.** With no docs, Client-First scored highest on both models. Its lead over Mast is solid, and its lead over Lumos is within the margin of error. Models often used Client-First names when asked for Mast or Lumos.
+- **Classes.** New class stacks failed on all three frameworks until the chain was created.
+- **Components.** Failed component builds left orphans on Mast and Lumos, and the slot names the MCP shows differ from the names it accepts. Client-First was not tested with components.
+- **Theming.** A dark section took 1 write on Lumos and 5 on Client-First. Mast was not measured.
+- **Page builds.** Mast built the hero test in the fewest calls. Lumos lost its H1 after an agent text edit. Client-First's first grid overflowed at 200% text, and v3's `grid-autofit` removed the overflow.
+- **Formula variables.** The MCP cannot write them. Client-First has none, Mast has 17 of 144, and Lumos has about 46 of 128.
+- **Confidence.** Most results are single runs, so treat them as observations, not measurements. See [Limits](#limits).
 
 ## Disclosures
 
-- **Who ran the tests.** Claude Code agents ran the tests under my direction. I checked the conditionals result in the Webflow Designer. First person in the result files ("I", "Mine") usually means the agent that ran that test.
-- **Who wrote the scoring.** The same agents wrote the fixtures, scoring keys, and test tasks, and they knew I expected Client-First to win. A Mast or Lumos expert might choose different tests.
+- **Author's interest.** The author has used Client-First for years, contributed to the Client-First V3 docs, and has published a video arguing for Client-First.
+- **Who ran the tests.** Claude Code agents ran the tests under the author's direction. The author checked the conditionals result in the Webflow Designer. First person in the result files ("I", "Mine") usually means the agent that ran that test.
+- **Who wrote the scoring.** The same agents wrote the fixtures, scoring keys, and test tasks, and they knew the author expected Client-First to win. A Mast or Lumos expert might choose different tests.
 - **Which models.** The model evals used Claude Haiku and Claude Sonnet only. They say nothing about other model families.
 
 ## Terms used here
@@ -124,7 +115,7 @@ Models often wrote Client-First classes when asked for Lumos or Mast. Mast and L
 
 The last row puts Lumos ahead. Those two tasks are where Lumos did worst, because the models invented classes for them, so dropping them removes real failures. It still shows how much two tasks can move the ranking.
 
-As a statistical check, I resampled the tasks many times to see how much each gap could move by chance. A range that crosses zero means the data cannot say which framework is ahead.
+Resampling the tasks shows how much each gap could move by chance. A range that crosses zero means the data cannot say which framework is ahead.
 
 | Gap | Likely range |
 | --- | --- |
@@ -134,7 +125,7 @@ As a statistical check, I resampled the tasks many times to see how much each ga
 
 An earlier version of this repo reported −0.17 to +0.77 for the Sonnet gap. That method treated all 30 answers as independent, but 3 answers to the same task are not, so it made the result look more certain than it is.
 
-The Lumos key was revised after the runs to match the class list on the live Lumos starter. Both versions of the key and both sets of scores are published. I later checked the answers for all three frameworks against the published stylesheets of the test sites. Mast did not change, and Client-First moved from 1.07 to about 1.05. That check covers the v2-era Client-First site only. The key scores Client-First on v2 naming, so a valid v3 class such as `margin-bottom-small` still scores 0.
+The Lumos key was revised after the runs to match the class list on the live Lumos starter. Both versions of the key and both sets of scores are published. The answers for all three frameworks were later checked against the published stylesheets of the test sites. Mast did not change, and Client-First moved from 1.07 to about 1.05. That check covers the v2-era Client-First site only. The key scores Client-First on v2 naming, so a valid v3 class such as `margin-bottom-small` still scores 0.
 
 ### Naming drift
 
@@ -149,12 +140,12 @@ Sonnet named the classes for 3 new components 10 times per framework, given a sh
 
 Models read a page's classes and answered 12 questions about it. Client-First scored 97%, Mast 99%, and Lumos 100%, so the test was too easy to separate them.
 
-The only misses came on "make only the card titles bigger", where Lumos got 6 of 6, Mast 5 of 6, and Client-First 4 of 6. Do not read much into that. Only the Lumos test page was written with a class for the card title, and a real Client-First page would normally have one too.
+The only misses came on "make only the card titles bigger", where Lumos got 6 of 6, Mast 5 of 6, and Client-First 4 of 6. This result reflects the test pages. Only the Lumos test page was written with a class for the card title, and a real Client-First page would normally have one too.
 
 ## Limits
 
 - **One run per test.** The test plan called for 3 runs, but each test ran once. The orphan, slot-name, order-sensitivity, and `calc` read-back findings were repeated. The rest were not. See [the replication list](probes/README.md#what-was-repeated).
-- **Client-First v3 was mostly not tested.** The test site is v2-era. Only the `grid-autofit` pattern was tested live, with a literal `20rem` in place of v3's variable. Everything else in the [v3 notes](probes/client-first-v3.md) comes from Finsweet's documentation.
+- **Client-First v3 was mostly not tested.** The test site is v2-era. Of its 169 non-custom classes, 107 also appear on the v3 cloneable, including the core structure, button, and heading classes. v3 replaces the paired spacing classes such as `margin-bottom margin-small` with single classes, and adds `grid-autofit`. Only `grid-autofit` was tested live, with a literal `20rem` in place of v3's variable. Everything else in the [v3 notes](probes/client-first-v3.md) comes from Finsweet's documentation.
 - **The 200% text test is a stand-in.** It sets the root font size inside an iframe rather than changing a real browser preference.
 - **Raw MCP call logs are not published.** The probe files are written summaries of those calls. The model evals are the exception, because their raw outputs are all here.
 - **Some comparisons cover only two frameworks.** The theme and icon-row tests did not run on Mast.
