@@ -1,0 +1,7 @@
+max-width-large
+
+Client-First's utility class for this is `max-width-large` (the scale runs xxsmall, xsmall, small, medium, large, xlarge, xxlarge, full). I'm sure about the class name but should note it's typically combined with a container class, as in `container-large` (the Client-First sizing class for the container itself).
+
+Since you asked for only the class list, here it is:
+
+container-large

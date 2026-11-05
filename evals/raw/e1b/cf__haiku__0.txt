@@ -1,0 +1,1 @@
+{"Q1": "padding-global padding-section-large", "Q2": "padding-global", "Q3": "container-large", "Q4": "is-secondary", "Q5": "margin-top margin-medium", "Q6": "features_list", "Q7": "none", "Q8": "section_hero", "Q9": "margin-bottom margin-xsmall", "Q10": "text-size-medium", "Q11": "hero_content", "Q12": "background-color-black text-color-white"}

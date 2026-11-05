@@ -1,0 +1,1 @@
+`rich-text margin-first-0 margin-last-0`

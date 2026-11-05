@@ -1,0 +1,7 @@
+section_wrapper is-dark
+
+Hmm, but Client-First convention: section classes are `section_[name]` for custom, and utility classes like `background-color-black`. Dark theme in Client-First is typically done with `background-color-black` plus `text-color-white`.
+
+**Final answer:**
+
+section_hero background-color-black text-color-white

@@ -1,0 +1,1 @@
+{"Q1": "section cc-hero", "Q2": "container", "Q3": "container", "Q4": "cc-secondary", "Q5": "paragraph-lg u-mb-md", "Q6": "row row-gap-md", "Q7": "h5", "Q8": "section cc-hero", "Q9": "u-mb-sm", "Q10": "paragraph-lg", "Q11": "col col-lg-6 col-md-12", "Q12": "u-mode-dark"}

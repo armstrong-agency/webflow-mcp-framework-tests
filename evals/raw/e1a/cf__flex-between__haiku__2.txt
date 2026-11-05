@@ -1,0 +1,1 @@
+flex-horizontal is-space-between is-align-center

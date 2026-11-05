@@ -1,0 +1,1 @@
+I don't know Mast's exact class names for this, so I can't give you a list I'd trust. Check the Mast class documentation for the margin-collapse wrapper utility.

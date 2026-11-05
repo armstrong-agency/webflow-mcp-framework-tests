@@ -1,0 +1,4170 @@
+{
+ "e1a": [
+  {
+   "fw": "cf",
+   "intent": "btn-secondary",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "btn",
+   "score": 0,
+   "invalid": [
+    "btn"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "btn-secondary",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "btn",
+   "score": 0,
+   "invalid": [
+    "btn"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "btn-secondary",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "button is-secondary",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "btn-secondary",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "button is-secondary",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "btn-secondary",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "button is-secondary",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "btn-secondary",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "button is-secondary",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "card-grid",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "grid-3-column",
+   "score": 0,
+   "invalid": [
+    "grid-3-column"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "card-grid",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "grid-3-columns",
+   "score": 0,
+   "invalid": [
+    "grid-3-columns"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "card-grid",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "grid-3-columns gap-medium",
+   "score": 0,
+   "invalid": [
+    "grid-3-columns",
+    "gap-medium"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "card-grid",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "cards_list_wrapper",
+   "score": 0,
+   "invalid": [
+    "cards_list_wrapper"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "card-grid",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "cards-grid_component",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "card-grid",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "cards_list",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "center-text-mb",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "text-align-center margin-bottom-small",
+   "score": 0,
+   "invalid": [
+    "margin-bottom-small"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "center-text-mb",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "text-align-center margin-bottom margin-small",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "center-text-mb",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "text-align-center margin-bottom-small",
+   "score": 0,
+   "invalid": [
+    "margin-bottom-small"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "center-text-mb",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "text-align-center margin-bottom margin-xsmall",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "center-text-mb",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "text-align-center margin-bottom margin-xsmall",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "center-text-mb",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "text-align-center margin-bottom margin-xsmall",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "container-lg",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "container-large",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "container-lg",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "container-large",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "container-lg",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "container-large",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "container-lg",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "max-width-large",
+   "score": 1,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "container-lg",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "max-width-large",
+   "score": 1,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "container-lg",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "max-width-large",
+   "score": 1,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "dark-section",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "section section_dark",
+   "score": 0,
+   "invalid": [
+    "section"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "dark-section",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "section is-dark",
+   "score": 0,
+   "invalid": [
+    "section"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "dark-section",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "section is-dark",
+   "score": 0,
+   "invalid": [
+    "section"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "dark-section",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "section_wrapper is-dark",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "dark-section",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "section_wrapper is-dark",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "dark-section",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "section-wrapper u-theme-dark",
+   "score": 0,
+   "invalid": [
+    "section-wrapper",
+    "u-theme-dark"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "flex-between",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "flex-horizontal y-center space-between",
+   "score": 0,
+   "invalid": [
+    "flex-horizontal",
+    "y-center",
+    "space-between"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "flex-between",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "flex-horizontal items-center justify-between",
+   "score": 0,
+   "invalid": [
+    "flex-horizontal",
+    "items-center",
+    "justify-between"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "flex-between",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "flex-horizontal is-space-between is-align-center",
+   "score": 0,
+   "invalid": [
+    "flex-horizontal"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "flex-between",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "layout-horizontal",
+   "score": 0,
+   "invalid": [
+    "layout-horizontal"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "flex-between",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "hflex-horizontal is not a client-first utility; the correct utilities are:",
+   "score": 0,
+   "invalid": [
+    "hflex-horizontal",
+    "is",
+    "not",
+    "a",
+    "client-first",
+    "utility;",
+    "the",
+    "correct",
+    "utilities",
+    "are:"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "flex-between",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-",
+   "score": 0,
+   "invalid": [
+    "u-"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "h2-as-h3",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "heading-style-h2",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "h2-as-h3",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "heading-style-h2",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "h2-as-h3",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "heading-style-h2",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "h2-as-h3",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "heading-style-h2",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "h2-as-h3",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "heading-style-h2",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "h2-as-h3",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "heading-style-h2",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "margin-trim",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "rich-text",
+   "score": 1,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "margin-trim",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "text-rich-text",
+   "score": 0,
+   "invalid": [
+    "text-rich-text"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "margin-trim",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "rich-text margin-first-0 margin-last-0",
+   "score": 0,
+   "invalid": [
+    "margin-first-0",
+    "margin-last-0"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "margin-trim",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "spacing-clean",
+   "score": 0,
+   "invalid": [
+    "spacing-clean"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "margin-trim",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "spacing-clean",
+   "score": 0,
+   "invalid": [
+    "spacing-clean"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "margin-trim",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "spacing-clean",
+   "score": 0,
+   "invalid": [
+    "spacing-clean"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "section-pad",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "padding-global padding-section-large",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "section-pad",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "padding-section-large padding-global",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "section-pad",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "padding-section-large padding-global",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "section-pad",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "padding-global padding-section-large",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "section-pad",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "padding-global padding-section-large",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "section-pad",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "padding-global padding-section-large",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "two-col",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "grid-2-columns",
+   "score": 0,
+   "invalid": [
+    "grid-2-columns"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "two-col",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "grid-2-columns",
+   "score": 0,
+   "invalid": [
+    "grid-2-columns"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "two-col",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "w-layout-grid grid-2-columns",
+   "score": 0,
+   "invalid": [
+    "w-layout-grid",
+    "grid-2-columns"
+   ]
+  },
+  {
+   "fw": "cf",
+   "intent": "two-col",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "feature_layout",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "two-col",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "layout1_component",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "cf",
+   "intent": "two-col",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "layout1_component",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "btn-secondary",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "button is-secondary",
+   "score": 0,
+   "invalid": [
+    "button"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "btn-secondary",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "button is-secondary",
+   "score": 0,
+   "invalid": [
+    "button"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "btn-secondary",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "button is-secondary",
+   "score": 0,
+   "invalid": [
+    "button"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "btn-secondary",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "button is-secondary",
+   "score": 0,
+   "invalid": [
+    "button"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "btn-secondary",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "button is-secondary",
+   "score": 0,
+   "invalid": [
+    "button"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "btn-secondary",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "button is-secondary",
+   "score": 0,
+   "invalid": [
+    "button"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "card-grid",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "grid-3-column",
+   "score": 0,
+   "invalid": [
+    "grid-3-column"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "card-grid",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "grid_cards grid-3-columns",
+   "score": 0,
+   "invalid": [
+    "grid-3-columns"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "card-grid",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "grid-3-columns grid-gap-medium",
+   "score": 0,
+   "invalid": [
+    "grid-3-columns",
+    "grid-gap-medium"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "card-grid",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "card_list u-grid-autofit",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "card-grid",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "cards_list u-grid-autofit",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "card-grid",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "card_list u-grid-autofit",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "center-text-mb",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "text-align-center margin-bottom-small",
+   "score": 0,
+   "invalid": [
+    "text-align-center",
+    "margin-bottom-small"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "center-text-mb",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "text-align-center margin-bottom margin-small",
+   "score": 0,
+   "invalid": [
+    "text-align-center",
+    "margin-bottom",
+    "margin-small"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "center-text-mb",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "u-text-align-center u-margin-bottom-small",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "center-text-mb",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "u-text-align-center u-margin-bottom-small",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "center-text-mb",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-text-align-center u-margin-bottom-small",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "center-text-mb",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-text-align-center u-margin-bottom-small",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "container-lg",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "container-large",
+   "score": 0,
+   "invalid": [
+    "container-large"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "container-lg",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "container-large",
+   "score": 0,
+   "invalid": [
+    "container-large"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "container-lg",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "container-large",
+   "score": 0,
+   "invalid": [
+    "container-large"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "container-lg",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "u-container-large",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "container-lg",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-container u-container-large",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "container-lg",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-container-large",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "dark-section",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "section background-color-dark",
+   "score": 0,
+   "invalid": [
+    "section",
+    "background-color-dark"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "dark-section",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "section background-color-primary dark-theme",
+   "score": 0,
+   "invalid": [
+    "section",
+    "background-color-primary",
+    "dark-theme"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "dark-section",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "section background-color-dark",
+   "score": 0,
+   "invalid": [
+    "section",
+    "background-color-dark"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "dark-section",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "u-section u-theme-dark",
+   "score": 0,
+   "invalid": [
+    "u-section"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "dark-section",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-section u-theme-dark",
+   "score": 0,
+   "invalid": [
+    "u-section"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "dark-section",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-section u-theme-dark",
+   "score": 0,
+   "invalid": [
+    "u-section"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "flex-between",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "flex-horizontal flex-space-between flex-align-middle",
+   "score": 0,
+   "invalid": [
+    "flex-horizontal",
+    "flex-space-between",
+    "flex-align-middle"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "flex-between",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "flex-horizontal flex-vertical-center space-between",
+   "score": 0,
+   "invalid": [
+    "flex-horizontal",
+    "flex-vertical-center",
+    "space-between"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "flex-between",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "flex-horizontal space-between v-center",
+   "score": 0,
+   "invalid": [
+    "flex-horizontal",
+    "space-between",
+    "v-center"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "flex-between",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "u-flex-horizontal u-align-items-center u-justify-content-between",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "flex-between",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-hflex-between-center",
+   "score": 0,
+   "invalid": [
+    "u-hflex-between-center"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "flex-between",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-flex-horizontal u-align-items-center u-justify-content-between",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "h2-as-h3",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "heading-style-h2",
+   "score": 0,
+   "invalid": [
+    "heading-style-h2"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "h2-as-h3",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "heading-style-h2",
+   "score": 0,
+   "invalid": [
+    "heading-style-h2"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "h2-as-h3",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "heading-style-h2",
+   "score": 0,
+   "invalid": [
+    "heading-style-h2"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "h2-as-h3",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "u-text-style-h2",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "h2-as-h3",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-text-style-h2",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "h2-as-h3",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-text-style-h2",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "margin-trim",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "text-rich-text",
+   "score": 0,
+   "invalid": [
+    "text-rich-text"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "margin-trim",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "rich-text",
+   "score": 0,
+   "invalid": [
+    "rich-text"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "margin-trim",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "u-rich-text u-remove-first-child-top-margin u-remove-last-child-bottom-margin",
+   "score": 0,
+   "invalid": [
+    "u-rich-text",
+    "u-remove-first-child-top-margin",
+    "u-remove-last-child-bottom-margin"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "margin-trim",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "u-margin-trim",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "margin-trim",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-margin-trim",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "margin-trim",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-margin-trim",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "section-pad",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "padding-global padding-section-large",
+   "score": 0,
+   "invalid": [
+    "padding-global",
+    "padding-section-large"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "section-pad",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "padding-section-large padding-global",
+   "score": 0,
+   "invalid": [
+    "padding-section-large",
+    "padding-global"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "section-pad",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "padding-section-large padding-global",
+   "score": 0,
+   "invalid": [
+    "padding-section-large",
+    "padding-global"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "section-pad",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "u-container u-section-large",
+   "score": 0,
+   "invalid": [
+    "u-section-large"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "section-pad",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-container u-section",
+   "score": 0,
+   "invalid": [
+    "u-section"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "section-pad",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "hero_contain u-container u-section",
+   "score": 0,
+   "invalid": [
+    "u-section"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "two-col",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "grid-2-columns",
+   "score": 0,
+   "invalid": [
+    "grid-2-columns"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "two-col",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "grid-2-columns",
+   "score": 0,
+   "invalid": [
+    "grid-2-columns"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "two-col",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "grid-2-columns",
+   "score": 0,
+   "invalid": [
+    "grid-2-columns"
+   ]
+  },
+  {
+   "fw": "lumos",
+   "intent": "two-col",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "feature_layout u-grid-custom",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "two-col",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "section_layout u-grid-custom",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "lumos",
+   "intent": "two-col",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-grid-custom",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "mast",
+   "intent": "btn-secondary",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "button is-secondary",
+   "score": 0,
+   "invalid": [
+    "is-secondary"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "btn-secondary",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "btn btn-secondary",
+   "score": 0,
+   "invalid": [
+    "btn",
+    "btn-secondary"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "btn-secondary",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "btn is-secondary",
+   "score": 0,
+   "invalid": [
+    "btn",
+    "is-secondary"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "btn-secondary",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "button is-secondary",
+   "score": 0,
+   "invalid": [
+    "is-secondary"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "btn-secondary",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "button is-secondary",
+   "score": 0,
+   "invalid": [
+    "is-secondary"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "btn-secondary",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "c-button is-secondary",
+   "score": 0,
+   "invalid": [
+    "c-button",
+    "is-secondary"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "card-grid",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "grid-wrapper cards-grid",
+   "score": 0,
+   "invalid": [
+    "grid-wrapper",
+    "cards-grid"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "card-grid",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "grid-wrap cards-grid",
+   "score": 0,
+   "invalid": [
+    "grid-wrap",
+    "cards-grid"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "card-grid",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "section_grid grid_wrapper",
+   "score": 0,
+   "invalid": [
+    "section_grid"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "card-grid",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "l-grid is-cards",
+   "score": 0,
+   "invalid": [
+    "l-grid",
+    "is-cards"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "card-grid",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "cards_grid",
+   "score": 1,
+   "invalid": []
+  },
+  {
+   "fw": "mast",
+   "intent": "card-grid",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "card_grid",
+   "score": 1,
+   "invalid": []
+  },
+  {
+   "fw": "mast",
+   "intent": "center-text-mb",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "i don t know the no-code supply mast naming convention so i can t give you a reliable class list if you share its class reference or a sample of its utility classes i ll write the list from that",
+   "score": 0,
+   "invalid": [
+    "i",
+    "don",
+    "t",
+    "know",
+    "the",
+    "no-code",
+    "supply",
+    "mast",
+    "naming",
+    "convention",
+    "so",
+    "i",
+    "can",
+    "t",
+    "give",
+    "you",
+    "a",
+    "reliable",
+    "class",
+    "list",
+    "if",
+    "you",
+    "share",
+    "its",
+    "class",
+    "reference",
+    "or",
+    "a",
+    "sample",
+    "of",
+    "its",
+    "utility",
+    "classes",
+    "i",
+    "ll",
+    "write",
+    "the",
+    "list",
+    "from",
+    "that"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "center-text-mb",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "text-center mb-sm",
+   "score": 0,
+   "invalid": [
+    "text-center",
+    "mb-sm"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "center-text-mb",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "u-text-center u-margin-bottom-small",
+   "score": 0,
+   "invalid": [
+    "u-margin-bottom-small"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "center-text-mb",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "u-text-center u-mb-sm",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "mast",
+   "intent": "center-text-mb",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-text-center u-mb-sm",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "mast",
+   "intent": "center-text-mb",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-text-center u-mb-sm",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "mast",
+   "intent": "container-lg",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "container-large",
+   "score": 0,
+   "invalid": [
+    "container-large"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "container-lg",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "container-large",
+   "score": 0,
+   "invalid": [
+    "container-large"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "container-lg",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "container-large",
+   "score": 0,
+   "invalid": [
+    "container-large"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "container-lg",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "u-container is-large",
+   "score": 0,
+   "invalid": [
+    "u-container",
+    "is-large"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "container-lg",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-container is-large",
+   "score": 0,
+   "invalid": [
+    "u-container",
+    "is-large"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "container-lg",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "container is-large",
+   "score": 0,
+   "invalid": [
+    "is-large"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "dark-section",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "section is-dark",
+   "score": 0,
+   "invalid": [
+    "is-dark"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "dark-section",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "section is-dark",
+   "score": 0,
+   "invalid": [
+    "is-dark"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "dark-section",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "section is-dark",
+   "score": 0,
+   "invalid": [
+    "is-dark"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "dark-section",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "c-section t-dark",
+   "score": 0,
+   "invalid": [
+    "c-section",
+    "t-dark"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "dark-section",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "c-section t-dark",
+   "score": 0,
+   "invalid": [
+    "c-section",
+    "t-dark"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "dark-section",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-section u-theme-dark",
+   "score": 0,
+   "invalid": [
+    "u-section",
+    "u-theme-dark"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "flex-between",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "u-flex u-flex-row u-align-items-center u-justify-between",
+   "score": 0,
+   "invalid": [
+    "u-flex",
+    "u-flex-row",
+    "u-align-items-center",
+    "u-justify-between"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "flex-between",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "flex-horizontal align-center space-between",
+   "score": 0,
+   "invalid": [
+    "flex-horizontal",
+    "align-center",
+    "space-between"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "flex-between",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "flex-row items-center justify-between",
+   "score": 0,
+   "invalid": [
+    "flex-row",
+    "items-center",
+    "justify-between"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "flex-between",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "flex-row items-center justify-between",
+   "score": 0,
+   "invalid": [
+    "flex-row",
+    "items-center",
+    "justify-between"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "flex-between",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "flex-row items-center justify-between",
+   "score": 0,
+   "invalid": [
+    "flex-row",
+    "items-center",
+    "justify-between"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "flex-between",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "flex-row items-center justify-between",
+   "score": 0,
+   "invalid": [
+    "flex-row",
+    "items-center",
+    "justify-between"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "h2-as-h3",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "heading-style-h2",
+   "score": 0,
+   "invalid": [
+    "heading-style-h2"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "h2-as-h3",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "text-style-h2",
+   "score": 0,
+   "invalid": [
+    "text-style-h2"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "h2-as-h3",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "heading-style-h2",
+   "score": 0,
+   "invalid": [
+    "heading-style-h2"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "h2-as-h3",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "h2",
+   "score": 2,
+   "invalid": []
+  },
+  {
+   "fw": "mast",
+   "intent": "h2-as-h3",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-h2",
+   "score": 0,
+   "invalid": [
+    "u-h2"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "h2-as-h3",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-h2",
+   "score": 0,
+   "invalid": [
+    "u-h2"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "margin-trim",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "i don t know mast s exact class names for this so i can t give you a list i d trust check the mast class documentation for the margin-collapse wrapper utility",
+   "score": 0,
+   "invalid": [
+    "i",
+    "don",
+    "t",
+    "know",
+    "mast",
+    "s",
+    "exact",
+    "class",
+    "names",
+    "for",
+    "this",
+    "so",
+    "i",
+    "can",
+    "t",
+    "give",
+    "you",
+    "a",
+    "list",
+    "i",
+    "d",
+    "trust",
+    "check",
+    "the",
+    "mast",
+    "class",
+    "documentation",
+    "for",
+    "the",
+    "margin-collapse",
+    "wrapper",
+    "utility"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "margin-trim",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "content-wrapper no-first-margin-top no-last-margin-bottom",
+   "score": 0,
+   "invalid": [
+    "content-wrapper",
+    "no-first-margin-top",
+    "no-last-margin-bottom"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "margin-trim",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "wrapper u-margin-top-first u-margin-bottom-last",
+   "score": 0,
+   "invalid": [
+    "wrapper",
+    "u-margin-top-first",
+    "u-margin-bottom-last"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "margin-trim",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "u-margin-trim",
+   "score": 0,
+   "invalid": [
+    "u-margin-trim"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "margin-trim",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "u-margin-trim",
+   "score": 0,
+   "invalid": [
+    "u-margin-trim"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "margin-trim",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "u-trim",
+   "score": 0,
+   "invalid": [
+    "u-trim"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "section-pad",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "i don t know the no-code supply mast class naming convention so i can t give you accurate class names without guessing if you paste the convention docs or a list of the site s classes i ll pick out the right ones",
+   "score": 0,
+   "invalid": [
+    "i",
+    "don",
+    "t",
+    "know",
+    "the",
+    "no-code",
+    "supply",
+    "mast",
+    "class",
+    "naming",
+    "convention",
+    "so",
+    "i",
+    "can",
+    "t",
+    "give",
+    "you",
+    "accurate",
+    "class",
+    "names",
+    "without",
+    "guessing",
+    "if",
+    "you",
+    "paste",
+    "the",
+    "convention",
+    "docs",
+    "or",
+    "a",
+    "list",
+    "of",
+    "the",
+    "site",
+    "s",
+    "classes",
+    "i",
+    "ll",
+    "pick",
+    "out",
+    "the",
+    "right",
+    "ones"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "section-pad",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "i don t have reliable knowledge of the no-code supply mast class naming convention so i can t give you the exact class names without guessing if you share its class reference or docs or paste the class names from the section and wrapper i ll give you the list",
+   "score": 0,
+   "invalid": [
+    "i",
+    "don",
+    "t",
+    "have",
+    "reliable",
+    "knowledge",
+    "of",
+    "the",
+    "no-code",
+    "supply",
+    "mast",
+    "class",
+    "naming",
+    "convention",
+    "so",
+    "i",
+    "can",
+    "t",
+    "give",
+    "you",
+    "the",
+    "exact",
+    "class",
+    "names",
+    "without",
+    "guessing",
+    "if",
+    "you",
+    "share",
+    "its",
+    "class",
+    "reference",
+    "or",
+    "docs",
+    "or",
+    "paste",
+    "the",
+    "class",
+    "names",
+    "from",
+    "the",
+    "and",
+    "wrapper",
+    "i",
+    "ll",
+    "give",
+    "you",
+    "the",
+    "list"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "section-pad",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "padding-section-large padding-global",
+   "score": 0,
+   "invalid": [
+    "padding-section-large",
+    "padding-global"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "section-pad",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "padding-global padding-section-large",
+   "score": 0,
+   "invalid": [
+    "padding-global",
+    "padding-section-large"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "section-pad",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "padding-global padding-section-large",
+   "score": 0,
+   "invalid": [
+    "padding-global",
+    "padding-section-large"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "section-pad",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "padding-global padding-section-large",
+   "score": 0,
+   "invalid": [
+    "padding-global",
+    "padding-section-large"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "two-col",
+   "model": "haiku",
+   "sample": 0,
+   "answer": "grid is-2-col is-stack-mobile",
+   "score": 0,
+   "invalid": [
+    "grid",
+    "is-2-col",
+    "is-stack-mobile"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "two-col",
+   "model": "haiku",
+   "sample": 1,
+   "answer": "w-layout-grid grid-2-col",
+   "score": 0,
+   "invalid": [
+    "w-layout-grid",
+    "grid-2-col"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "two-col",
+   "model": "haiku",
+   "sample": 2,
+   "answer": "i don t know the no-code supply mast class naming convention well enough to give you an accurate class list if you paste the relevant part of their docs or a sample of their class names i can write the list for you",
+   "score": 0,
+   "invalid": [
+    "i",
+    "don",
+    "t",
+    "know",
+    "the",
+    "no-code",
+    "supply",
+    "mast",
+    "class",
+    "naming",
+    "convention",
+    "well",
+    "enough",
+    "to",
+    "give",
+    "you",
+    "an",
+    "accurate",
+    "class",
+    "list",
+    "if",
+    "you",
+    "paste",
+    "the",
+    "relevant",
+    "part",
+    "of",
+    "their",
+    "docs",
+    "or",
+    "a",
+    "sample",
+    "of",
+    "their",
+    "class",
+    "names",
+    "i",
+    "can",
+    "write",
+    "the",
+    "list",
+    "for",
+    "you"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "two-col",
+   "model": "sonnet",
+   "sample": 0,
+   "answer": "l-grid-2",
+   "score": 0,
+   "invalid": [
+    "l-grid-2"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "two-col",
+   "model": "sonnet",
+   "sample": 1,
+   "answer": "grid cols-2 stack-mobile",
+   "score": 0,
+   "invalid": [
+    "grid",
+    "cols-2",
+    "stack-mobile"
+   ]
+  },
+  {
+   "fw": "mast",
+   "intent": "two-col",
+   "model": "sonnet",
+   "sample": 2,
+   "answer": "l-grid l-grid-2",
+   "score": 0,
+   "invalid": [
+    "l-grid",
+    "l-grid-2"
+   ]
+  }
+ ],
+ "e1b": [
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "padding-global",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "margin-top margin-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "none",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section_hero",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "margin-bottom margin-xsmall",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "text-size-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "background-color-black text-color-white",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "margin-top margin-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "none",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section_hero",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "margin-xsmall",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "text-size-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "background-color-black text-color-white",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "margin-top margin-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "none",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section_hero",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "margin-xsmall",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "text-size-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "background-color-black text-color-white",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "margin-top margin-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "heading-style-h5",
+   "ok": false
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section_hero",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "margin-xsmall",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "text-size-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "background-color-black text-color-white",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "margin-top margin-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "heading-style-h5",
+   "ok": false
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section_hero",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "margin-xsmall",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "text-size-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "background-color-black text-color-white",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "padding-global padding-section-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container-large",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "margin-top margin-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "none",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section_hero",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "margin-xsmall",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "text-size-medium",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "cf",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "background-color-black text-color-white",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "hero_button_wrap u-flex-horizontal-wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list u-grid-autofit",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "features_card_title",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "hero_eyebrow",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "u-text-style-large",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-theme-dark",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "hero_button_wrap u-flex-horizontal-wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list u-grid-autofit",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "features_card_title",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "hero_eyebrow",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "u-text-style-large",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-theme-dark",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "hero_button_wrap u-flex-horizontal-wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list u-grid-autofit",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "features_card_title",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "hero_eyebrow",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "u-text-style-large",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-theme-dark",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "hero_text u-text-style-large",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list u-grid-autofit",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "features_card_title",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "hero_eyebrow",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "u-text-style-large",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-theme-dark",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "hero_text u-text-style-large",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list u-grid-autofit",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "features_card_title",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "hero_eyebrow",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "u-text-style-large",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-theme-dark",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "hero_contain u-container",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "is-secondary",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "hero_text u-text-style-large",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "features_list u-grid-autofit",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "features_card_title",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "hero_wrap",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "hero_eyebrow",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "u-text-style-large",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "hero_content",
+   "ok": true
+  },
+  {
+   "fw": "lumos",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-theme-dark",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "cc-secondary",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "paragraph-lg u-mb-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "row row-gap-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "none",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "u-mb-sm",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "paragraph-lg",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "col col-lg-6 col-md-12",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 0,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-mode-dark",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "cc-secondary",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "paragraph-lg u-mb-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "row row-gap-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "none",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "u-mb-sm",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "paragraph-lg",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "col col-lg-6 col-md-12",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 1,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-mode-dark",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "cc-secondary",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "paragraph-lg u-mb-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "row row-gap-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "none",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "u-mb-sm",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "paragraph-lg",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "col col-lg-6 col-md-12",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "haiku",
+   "sample": 2,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-mode-dark",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "cc-secondary",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "paragraph-lg u-mb-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "row row-gap-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "none",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "u-mb-sm",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "paragraph-lg",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "col col-lg-6 col-md-12",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 0,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-mode-dark",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "cc-secondary",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "paragraph-lg u-mb-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "row row-gap-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "none",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "u-mb-sm",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "paragraph-lg",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "col col-lg-6 col-md-12",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 1,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-mode-dark",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q1",
+   "qtype": "P",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q2",
+   "qtype": "P",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q3",
+   "qtype": "S",
+   "answer": "container",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q4",
+   "qtype": "V",
+   "answer": "cc-secondary",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q5",
+   "qtype": "P",
+   "answer": "paragraph-lg u-mb-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q6",
+   "qtype": "S",
+   "answer": "row row-gap-md",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q7",
+   "qtype": "G",
+   "answer": "h5",
+   "ok": false
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q8",
+   "qtype": "S",
+   "answer": "section cc-hero",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q9",
+   "qtype": "P",
+   "answer": "u-mb-sm",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q10",
+   "qtype": "V",
+   "answer": "paragraph-lg",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q11",
+   "qtype": "S",
+   "answer": "col col-lg-6 col-md-12",
+   "ok": true
+  },
+  {
+   "fw": "mast",
+   "model": "sonnet",
+   "sample": 2,
+   "q": "Q12",
+   "qtype": "V",
+   "answer": "u-mode-dark",
+   "ok": true
+  }
+ ],
+ "e1c": {
+  "cf": {
+   "parsed": 10,
+   "mean_distinct": 1.411764705882353,
+   "conform": 1,
+   "bad_samples": 0,
+   "tokens_per_el": 1.0588235294117647,
+   "distinct": {
+    "pricing.card": 1,
+    "pricing.popular_badge": 3,
+    "pricing.title": 1,
+    "pricing.price": 2,
+    "pricing.feature_list": 2,
+    "pricing.feature_item": 2,
+    "pricing.button": 1,
+    "team.card": 1,
+    "team.photo": 1,
+    "team.name": 2,
+    "team.role": 2,
+    "team.social_list": 1,
+    "team.social_link": 1,
+    "faq.item": 1,
+    "faq.question": 1,
+    "faq.answer": 1,
+    "faq.toggle_icon": 1
+   },
+   "invalid": []
+  },
+  "mast": {
+   "parsed": 10,
+   "mean_distinct": 2.2941176470588234,
+   "conform": 0.990909090909091,
+   "bad_samples": 2,
+   "tokens_per_el": 1.2941176470588236,
+   "distinct": {
+    "pricing.card": 1,
+    "pricing.popular_badge": 3,
+    "pricing.title": 3,
+    "pricing.price": 3,
+    "pricing.feature_list": 2,
+    "pricing.feature_item": 3,
+    "pricing.button": 2,
+    "team.card": 2,
+    "team.photo": 3,
+    "team.name": 2,
+    "team.role": 2,
+    "team.social_list": 3,
+    "team.social_link": 2,
+    "faq.item": 1,
+    "faq.question": 4,
+    "faq.answer": 2,
+    "faq.toggle_icon": 1
+   },
+   "invalid": [
+    "team-card"
+   ]
+  },
+  "lumos": {
+   "parsed": 10,
+   "mean_distinct": 2.2941176470588234,
+   "conform": 1,
+   "bad_samples": 0,
+   "tokens_per_el": 1.2647058823529411,
+   "distinct": {
+    "pricing.card": 2,
+    "pricing.popular_badge": 4,
+    "pricing.title": 3,
+    "pricing.price": 2,
+    "pricing.feature_list": 2,
+    "pricing.feature_item": 3,
+    "pricing.button": 1,
+    "team.card": 1,
+    "team.photo": 2,
+    "team.name": 2,
+    "team.role": 2,
+    "team.social_list": 2,
+    "team.social_link": 1,
+    "faq.item": 1,
+    "faq.question": 4,
+    "faq.answer": 4,
+    "faq.toggle_icon": 3
+   },
+   "invalid": []
+  }
+ }
+}

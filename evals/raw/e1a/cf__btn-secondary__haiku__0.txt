@@ -1,0 +1,5 @@
+Finsweet Client-First uses `btn` as the base button class, and `is-secondary` as the modifier for secondary-style buttons.
+
+-button-group is not needed here, so the answer is:
+
+btn is-secondary

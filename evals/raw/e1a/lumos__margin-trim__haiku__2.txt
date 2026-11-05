@@ -1,0 +1,3 @@
+`u-rich-text u-remove-first-child-top-margin u-remove-last-child-bottom-margin`
+
+I'm not certain these are the exact class names in the current Lumos release, so check them against the Lumos utility class list before relying on them.

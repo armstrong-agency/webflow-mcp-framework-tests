@@ -1,0 +1,6 @@
+Class naming convention:
+- Custom classes name an element's role inside a component: folder_element, with one underscore between the component folder and the element name, and hyphens inside names (pricing_card, pricing_card-title, team_image-wrapper). The component root is folder_component; its section is section_folder.
+- Utility classes have no underscore and do one global job: padding-global, padding-section-small|medium|large, container-small|medium|large, text-size-tiny|small|regular|medium|large, text-weight-semibold|bold, text-align-center, text-color-*, background-color-*, heading-style-h1..h6, margin-bottom / margin-top paired with margin-xsmall|small|medium|large, max-width-*.
+- Combo classes start with is- and modify the base class they sit on: button is-secondary, button is-small, pricing_card is-featured.
+- Buttons: button, plus is-secondary / is-small / is-link / is-icon; group them in button-group.
+- Prefer one meaningful custom class per element; add a utility only when it fits exactly. Do not stack many utilities.

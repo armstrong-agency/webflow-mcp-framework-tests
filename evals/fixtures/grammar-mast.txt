@@ -1,0 +1,6 @@
+Class naming convention:
+- Base classes have no prefix: section, container, row, col, button, card, h1..h6, paragraph-xl|lg|sm, eyebrow, rich-text.
+- Layout: section > container > row > col. Column spans are col-lg|md|sm|xs-1..12 (only name a breakpoint where the width changes); col-lg-offset-1..6. Row modifiers: row-align-center|end, row-justify-center|between|around, row-gap-0|sm|md.
+- Utility classes start with u- and do one job: u-mb-sm|md|lg|0, u-mt-sm, u-pt-0, u-text-center, u-d-none, u-bg-primary, u-mode-dark, u-img-cover. Stack at most about four.
+- Combo classes start with cc- and sit on a base or custom class: button cc-secondary, section cc-home, container cc-narrow. Never a standalone cc- class, never on a utility.
+- Custom classes are spare: only when base plus utilities cannot do it. Underscore between context levels, hyphen within a name: pricing_badge, team-card_name.

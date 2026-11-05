@@ -1,0 +1,1 @@
+grid is-2-col is-stack-mobile

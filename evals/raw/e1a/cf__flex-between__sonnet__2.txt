@@ -1,0 +1,9 @@
+hflex-horizontal is not a real Client-First class, so I'll use the utility classes that are: Client-First uses `u-` prefixes only in v2.1+ for some things, but the established helper classes are `flex-horizontal`... 
+
+Final answer:
+
+`flex-horizontal align-center justify-space-between`
+
+Hmm, let me be accurate to Client-First conventions: Client-First doesn't ship flex helper classes by default, but the commonly used custom utility pattern is `u-` prefixed in newer versions.
+
+`u-flex-horizontal u-align-center u-justify-between`

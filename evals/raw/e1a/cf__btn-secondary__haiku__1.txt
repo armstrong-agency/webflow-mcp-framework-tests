@@ -1,0 +1,3 @@
+Finsweet Client-First's button convention is `btn` as the base class, with `is-secondary` as the style modifier.
+
+btn is-secondary

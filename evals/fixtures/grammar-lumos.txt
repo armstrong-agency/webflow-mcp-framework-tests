@@ -1,0 +1,5 @@
+Class naming convention:
+- Every element gets a custom class first. Custom classes use underscores only, pattern type_variation(optional)_element, never more than three underscores: pricing_card_title, team_secondary_image. type_wrap marks a component root; type_contain is its container; child groups nest: pricing_feature_wrap, pricing_feature_text.
+- Utility classes start with u-, use hyphens, and stack on top of a custom class (at most about four): u-text-style-h1..h6|large|main|small, u-container, u-margin-trim, u-grid-autofit, u-flex-horizontal-wrap, u-flex-vertical-nowrap, u-align-items-center, u-justify-content-between, u-display-contents, u-theme-dark|light.
+- Combo classes start with is-, use hyphens, and modify a custom class (never a utility): pricing_card is-featured, button_main_wrap is-secondary.
+- Prefer putting margin and layout styles on the custom class; reach for a utility when it fits exactly.

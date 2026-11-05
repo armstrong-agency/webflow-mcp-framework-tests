@@ -1,0 +1,11 @@
+hflex-horizontal is not a Client-First utility; the correct utilities are:
+
+`u-flex-horizontal` is also not standard. Client-First uses these utility classes: `flex-horizontal`... 
+
+Final answer:
+
+`flex-horizontal align-center justify-space-between`
+
+Wait, I should give only the class list. Client-First's documented utilities include `align-center` and `justify-space-between` (with `flex-horizontal` as the base in some setups), so:
+
+**`flex-horizontal align-center justify-space-between`**

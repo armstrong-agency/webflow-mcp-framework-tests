@@ -1,0 +1,9 @@
+section_wrapper is-dark
+
+Actually, in Client-First the standard is `section_[name]` for sections, with theme handled by a combo class or utility. The most idiomatic answer:
+
+`padding-global is-dark`
+
+Hmm — to give a single definitive answer:
+
+`section_hero is-dark`
