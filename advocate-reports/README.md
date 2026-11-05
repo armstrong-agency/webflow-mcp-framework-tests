@@ -1,6 +1,6 @@
 # Advocate reports
 
-Three Claude agents were each assigned one framework and asked to make its strongest honest case for AI-agent work through the Webflow MCP. They read the first-round probe results and the framework docs, and they looked for where Armstrong's argument would fail. They are not statements from Finsweet, No-Code Supply Co., or Timothy Ricks.
+Three Claude agents were each assigned one framework and asked to make its strongest honest case for AI-agent work through the Webflow MCP. They read the first-round probe results and the framework docs, and they looked for where Emmett's argument would fail. They are not statements from Finsweet, No-Code Supply Co., or Timothy Ricks.
 
 | Report | Framework |
 | --- | --- |
