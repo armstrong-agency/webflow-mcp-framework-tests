@@ -5,7 +5,7 @@ These are the tests behind my video, *Why Client-First Is the Best Framework for
 1. What can an AI agent actually do with each framework through the Webflow MCP?
 2. What do AI models already know about each framework?
 
-The video argues a position. This repo does not. It reports what happened, including the results that favor Mast and Lumos, so you can check the data and reach your own conclusion.
+The video argues a position. This repo does not. It reports what happened, including the results that favor Mast and Lumos, so you can check the data and reach your own conclusion. Where the two differ, see [where the video goes further than these tests](#where-the-video-goes-further-than-these-tests).
 
 All tests ran on 2026-11-02 against Webflow MCP beta v2.2.0. The MCP changes often, so treat every result as a snapshot of that version.
 
@@ -148,6 +148,20 @@ The only misses came on "make only the card titles bigger", where Lumos got 6 of
 - **Raw MCP call logs are not published.** The probe files are written summaries of those calls. The model evals are the exception, because their raw outputs are all here.
 - **Some comparisons cover only two frameworks.** The theme and icon-row tests did not run on Mast.
 - **Nothing here is a full build.** No test had an agent build a complete site from one brief on each framework.
+
+## Where the video goes further than these tests
+
+The video is my opinion, informed by these tests and by years of using Client-First. In these places it says more than the tests show, so trust the tests over the video.
+
+- **Scope.** The video calls Client-First the best way to work in Webflow. These tests cover agent work through the MCP, on two Claude models, mostly in single runs.
+- **Client-First v3.** The video is framed around v3, but the tests ran on a v2-era site. Only the `grid-autofit` pattern was tested. My points about v3's variables, theming, and agent instructions come from its documentation.
+- **What I tested.** Agents ran the tests under my direction, on three frameworks, and not every test ran on all three. Client-First was never tested with components, so its advantage here comes from not needing them. If you build components on Client-First, the same MCP limits apply, including the risk to conditionals.
+- **How often components fail.** "Half the time" is my impression, not a measurement. The tests found specific failures, such as plain elements in slots and nested slots. Putting a component in a slot worked, and Mast built the hero test in the fewest calls with no failures.
+- **How fluent models are.** The lead over Mast is clear. The lead over Lumos is not, because the data cannot separate them on Sonnet. Models reaching for Client-First names on a real Lumos site is my experience, not a test result. The evals used no site, and when Sonnet was given a short summary of the naming rules, it followed Lumos and Mast almost perfectly.
+- **Free-entry class fields.** The tests show these fields accept classes that do not exist, with no error. They did not test whether models struggle to fill them in or can read their tooltips. My dark or light example is also a weak one, because a theme change was Lumos's best result here.
+- **Style guides.** Pointing an agent at the style guide is my workflow, and I did not test it against the other frameworks. They have class lists too, and Client-First still encourages custom classes. Its 200% text overflow came from a grid the agent wrote itself.
+- **Formulas.** The MCP reads existing formulas correctly, and they publish correctly. The problems are that it cannot write formula variables and that it misreports math it has just written.
+- **What the video leaves out.** Client-First lost the dark section test, 5 writes to 1, and it was the only framework with visible overflow at 200% text. The v3 grid fixed that overflow in the one test that tried it.
 
 ## What could change these results
 
