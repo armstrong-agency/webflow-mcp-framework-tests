@@ -1,4 +1,5 @@
-"""E1a intents and answer key, fixed before any model run.
+"""E1a intents and answer key. The intents were fixed before any model run. The Lumos rules were
+revised afterwards, and the original file is in preregistered/scripts/.
 
 Scoring per answer:
   2 = idiomatic: matches the key's idiom rule for that framework and every token is valid in vocab.py
@@ -80,11 +81,11 @@ def idiomatic(fw, intent, ts):
         if intent == "section-pad":
             return any(t.endswith("_wrap") for t in s)
         if intent == "center-text-mb":
-            return False  # v2: no verified Lumos text-align utility; v1 accepted u-alignment-center / u-text-align-center
+            return "u-alignment-center" in s
         if intent == "two-col":
             return any(t.startswith("u-grid-") for t in s) or (len(ts) == 1 and len(customs) == 1)
         if intent == "btn-secondary":
-            return "is-secondary" in s and len(customs) >= 1
+            return any(t.startswith("button_") for t in customs)  # Lumos sets button style with a component variant
         if intent == "container-lg":
             return "u-container" in s  # v2: v1 also accepted any u-container-*
         if intent == "h2-as-h3":

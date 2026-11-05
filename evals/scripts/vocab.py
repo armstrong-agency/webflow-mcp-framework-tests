@@ -4,8 +4,8 @@ Sources: ~/.claude/skills/wf-reference/client-first.md, ~/.claude/skills/wf-refe
 sandbox-cf-skills-test/lumos-naming.md, plus class names observed on the real starters.
 
 valid(fw, token) answers "is this a class the framework's grammar permits?" It does not judge idiom.
-Lumos's full utility list was not available offline, so its u- families are the documented or
-observed ones plus u-margin-*/u-padding-*/u-alignment-* (plausible, unverified); see limitations.
+The Lumos u- families below are the ones checked against the live Lumos v2 Starter, not its full
+utility list. The original version of this file is in preregistered/scripts/.
 """
 import re
 
@@ -62,7 +62,7 @@ LUMOS_PATTERNS = [
     r"u-section", r"u-section-spacer",
     r"u-container", r"u-container-(small|full)",
     r"u-text-style-(h[1-6]|display|large|main|small)",
-    r"u-margin-trim", r"u-display-contents",
+    r"u-margin-trim", r"u-display-contents", r"u-alignment-(start|center|end)",
     r"u-grid-(autofit|autofill|custom|subgrid|breakout)",
     r"u-flex-(horizontal|vertical)-(wrap|nowrap)", r"u-flex-(grow|shrink|noshrink)",
     r"u-align-(items|self)-(start|center|end|stretch|variable)",

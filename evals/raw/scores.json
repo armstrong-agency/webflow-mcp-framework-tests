@@ -4104,6 +4104,7 @@
   "cf": {
    "parsed": 10,
    "mean_distinct": 1.411764705882353,
+   "mean_distinct_no_u": 1.411764705882353,
    "conform": 1,
    "bad_samples": 0,
    "tokens_per_el": 1.0588235294117647,
@@ -4131,6 +4132,7 @@
   "mast": {
    "parsed": 10,
    "mean_distinct": 2.2941176470588234,
+   "mean_distinct_no_u": 1.7058823529411764,
    "conform": 0.990909090909091,
    "bad_samples": 2,
    "tokens_per_el": 1.2941176470588236,
@@ -4160,6 +4162,7 @@
   "lumos": {
    "parsed": 10,
    "mean_distinct": 2.2941176470588234,
+   "mean_distinct_no_u": 1.5294117647058822,
    "conform": 1,
    "bad_samples": 0,
    "tokens_per_el": 1.2647058823529411,

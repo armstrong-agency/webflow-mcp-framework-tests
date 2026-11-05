@@ -22,8 +22,8 @@ Source: [Webflow Help: Conditionals](https://help.webflow.com/hc/en-us/articles/
 | Tag/DOM id/settings bound directly to one prop or CMS/page/locale field | Yes (`set_settings` binding) |
 | Rule-based conditionals: operators, groups, any/all, fallbacks, slot-empty checks | **No tool surface at all** |
 | Conditional-driven variants, text, images, video | **No** |
-| Read an existing conditional back | Unverified; no schema field names conditionals, so at best they are opaque |
-| Risk | An agent calling `set_visibility`/`set_settings` on a setting that carries a conditional may silently replace it; untested because conditionals cannot be created headlessly |
+| Read an existing conditional back | Only as an opaque marker, as the round-trip test below showed |
+| Risk | An agent calling `set_visibility` on a setting that carries a conditional silently replaces it, as the round-trip test below showed |
 
 ## Exposure by framework
 

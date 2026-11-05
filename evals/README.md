@@ -22,11 +22,12 @@ These evals measure what Claude Haiku and Claude Sonnet know about each framewor
 
 ## What changed after pre-registration
 
-- **The Lumos key.** After the runs, `e1a_key.py` and `vocab.py` were revised to match the class list on the live Lumos v2 Starter. This lowered Lumos's combined score from 0.70 to 0.53. The Client-First and Mast vocabularies were not checked against live starters. `results.md` lists what moved.
+- **The Lumos key.** After the runs, `e1a_key.py` and `vocab.py` were revised to match the class list on the live Lumos v2 Starter. This lowered Lumos's combined score from 0.70 to 0.53. A later review fixed two rules in that revision, for `u-alignment-center` and the secondary button, and no score changed. `results.md` lists what moved.
 - **A parsing fix.** `score.py` was written after the hashes and later changed to score only the first line of each answer, so an unrequested explanation would not zero a correct answer. This moved Client-First from 0.98 to 1.07.
-- **The bootstrap script.** `scripts/bootstrap.py` was added when this repo was assembled, to make the Sonnet interval checkable. It gives the same interval as `results.md`.
+- **The bootstrap script.** `scripts/bootstrap.py` was added when this repo was assembled. It now prints two ranges for each gap. The first treats every answer as independent and matches the interval first reported. The second resamples the 10 tasks, and it is the one reported in `results.md`.
+- **Extra tables.** `score.py` now also prints the same-task comparison and the drift row that ignores `u-` utilities. These use the same saved answers.
 
-The vocabulary comments in `vocab.py` mention private reference notes and a local copy of the Lumos naming docs. Neither is published here. The scripts are kept as they ran, so their hashes still match.
+The vocabulary comments in `vocab.py` mention private reference notes and a local copy of the Lumos naming docs. Neither is published here. The files in `preregistered/scripts/` are kept as they ran, so their hashes still match.
 
 ## Check the results
 
@@ -41,7 +42,7 @@ python3 bootstrap.py
 
 `verify-preregistration.sh` checks all 9 hashes. `score.py` prints the tables in `raw/score-output.md` and rewrites `raw/scores.json` with the same contents.
 
-To score with the pre-registered key, copy `preregistered/scripts/*.py` over a temporary copy of `scripts/` and run `score.py` there. It reproduces `raw/score-output-v1.md`.
+To score with the pre-registered key, run `python3 score.py --v1`. It prints the tables in `raw/score-output-v1.md` and rewrites `raw/scores-v1.json` with the same contents.
 
 ## Run the models again
 

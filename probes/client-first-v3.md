@@ -30,7 +30,7 @@ Same Client-First probe section. The card grid changed from the v2-style `1fr 1f
 | Visible overflow at 200% | 307px at 1440, 13px at 480, 165px at 320 | **none at any width** |
 | Writes to build the grid | 2 (base + tablet override) | 1 |
 
-So the round-4 Client-First failure was a v2-pattern failure. v3's built-in grid utility matches Lumos's breakpointless behavior with one class. The leftover invisible page-width overflow at 320px / 200% (100px) matches Mast and Lumos and has no visible element.
+So the round-4 Client-First failure was a v2-pattern failure. v3's built-in grid utility matches Lumos's breakpointless behavior with one class. The leftover invisible page-width overflow at 320px / 200% (100px) is similar to Mast's 124px and Lumos's 110px and has no visible element.
 
 ## What v3 doesn't change
 

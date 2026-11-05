@@ -11,6 +11,17 @@ Excluding custom-class idioms:
   mast: 0.19 (n=54)
   lumos: 0.53 (n=60)
 
+Same intents for every framework:
+
+| intents | model | cf | mast | lumos |
+|---|---|---|---|---|
+| All 10 intents | sonnet | 1.37 | 0.33 | 1.07 |
+| All 10 intents | all | 1.07 | 0.17 | 0.53 |
+| Without Client-First's 4 custom-class intents | sonnet | 1.72 | 0.44 | 0.78 |
+| Without Client-First's 4 custom-class intents | all | 1.47 | 0.22 | 0.39 |
+| Without secondary button and centered text | sonnet | 1.21 | 0.17 | 1.33 |
+| Without secondary button and centered text | all | 1.00 | 0.08 | 0.67 |
+
 | intent | cf | mast | lumos |
 |---|---|---|---|
 | section-pad | 2.00 | 0.00 | 0.33 |
@@ -57,6 +68,7 @@ Excluding custom-class idioms:
 |---|---|---|---|
 | samples parsed | 10 | 10 | 10 |
 | mean distinct class strings per role (of 10) | 1.41 | 2.29 | 2.29 |
+| same, ignoring u- utilities | 1.41 | 1.71 | 1.53 |
 | % tokens conforming | 100.0% | 99.1% | 100.0% |
 | samples with any non-conforming class | 0 | 2 | 0 |
 | mean classes per element | 1.06 | 1.29 | 1.26 |

@@ -1,9 +1,17 @@
-"""Score raw outputs for E1a/E1b/E1c and print markdown tables. Writes raw/scores.json."""
+"""Score raw outputs for E1a/E1b/E1c and print markdown tables.
+
+Writes raw/scores.json. With --v1 it uses the pre-registered key and writes raw/scores-v1.json.
+"""
 import json
 import pathlib
 import re
+import sys
 from collections import defaultdict
 from statistics import mean
+
+V1 = "--v1" in sys.argv
+if V1:
+    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent / "preregistered" / "scripts"))
 
 from e1a_key import CUSTOM_IDIOM, INTENTS, score as score_e1a
 from e1b_key import KEY, QUESTIONS, correct
@@ -11,6 +19,10 @@ from vocab import tokens, valid
 
 RAW = pathlib.Path(__file__).resolve().parent.parent / "raw"
 FWS = ["cf", "mast", "lumos"]
+CF_CUSTOM = {"two-col", "flex-between", "margin-trim", "card-grid"}
+LUMOS_WEAK = {"btn-secondary", "center-text-mb"}
+INTENT_SETS = [("All 10 intents", set()), ("Without Client-First's 4 custom-class intents", CF_CUSTOM),
+               ("Without secondary button and centered text", LUMOS_WEAK)]
 
 
 def parse_json(text):
@@ -44,6 +56,12 @@ def e1a():
     for fw in FWS:
         xs = [r["score"] for r in rows if r["fw"] == fw and (fw, r["intent"]) not in CUSTOM_IDIOM]
         print(f"  {fw}: {mean(xs):.2f} (n={len(xs)})")
+    print("\nSame intents for every framework:\n\n| intents | model | " + " | ".join(FWS) + " |\n|---|---|---|---|---|")
+    for label, dropped in INTENT_SETS:
+        for m in ("sonnet", "all"):
+            print(f"| {label} | {m} | " + " | ".join(
+                f"{mean(r['score'] for r in rows if r['fw'] == fw and r['intent'] not in dropped and m in ('all', r['model'])):.2f}"
+                for fw in FWS) + " |")
     print("\n| intent | " + " | ".join(FWS) + " |\n|---|---|---|---|")
     for iid, _ in INTENTS:
         print(f"| {iid} | " + " | ".join(
@@ -80,7 +98,7 @@ def e1c():
     print("\n## E1c drift (sonnet, 10 samples each)\n\n| metric | " + " | ".join(FWS) + " |\n|---|---|---|---|")
     stats = {}
     for fw in FWS:
-        per_role = defaultdict(list)
+        per_role, per_role_no_u = defaultdict(list), defaultdict(set)
         all_tokens, bad_samples, parsed = [], 0, 0
         for f in sorted((RAW / "e1c").glob(f"{fw}__*.txt")):
             d = parse_json(f.read_text())
@@ -92,15 +110,18 @@ def e1c():
                 for role, cls in roles.items():
                     ts = tokens(cls)
                     per_role[f"{comp}.{role}"].append(" ".join(sorted(ts)))
+                    per_role_no_u[f"{comp}.{role}"].add(" ".join(sorted(x for x in ts if not x.startswith("u-"))))
                     all_tokens += ts
                     sample_bad |= any(not valid(fw, t) for t in ts)
             bad_samples += sample_bad
         distinct = {r: len(set(v)) for r, v in per_role.items()}
         conform = mean(valid(fw, t) for t in all_tokens)
-        stats[fw] = dict(parsed=parsed, mean_distinct=mean(distinct.values()), conform=conform,
+        stats[fw] = dict(parsed=parsed, mean_distinct=mean(distinct.values()),
+                         mean_distinct_no_u=mean(map(len, per_role_no_u.values())), conform=conform,
                          bad_samples=bad_samples, tokens_per_el=len(all_tokens) / max(1, sum(map(len, per_role.values()))),
                          distinct=distinct, invalid=sorted({t for t in all_tokens if not valid(fw, t)}))
     for label, key, fmt in [("samples parsed", "parsed", "{}"), ("mean distinct class strings per role (of 10)", "mean_distinct", "{:.2f}"),
+                            ("same, ignoring u- utilities", "mean_distinct_no_u", "{:.2f}"),
                             ("% tokens conforming", "conform", "{:.1%}"), ("samples with any non-conforming class", "bad_samples", "{}"),
                             ("mean classes per element", "tokens_per_el", "{:.2f}")]:
         print(f"| {label} | " + " | ".join(fmt.format(stats[fw][key]) for fw in FWS) + " |")
@@ -111,4 +132,4 @@ def e1c():
 
 if __name__ == "__main__":
     res = dict(e1a=e1a(), e1b=e1b(), e1c=e1c())
-    (RAW / "scores.json").write_text(json.dumps(res, indent=1, default=str))
+    (RAW / ("scores-v1.json" if V1 else "scores.json")).write_text(json.dumps(res, indent=1, default=str))

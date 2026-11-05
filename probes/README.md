@@ -1,22 +1,24 @@
 # MCP probes
 
-These probes ask whether the Webflow MCP can perform the mechanics each framework depends on. Each one ran on a real starter for its framework and was read back through the MCP. Round 4 published test pages and measured them in Chrome.
+These tests ask whether the Webflow MCP can do the things each framework depends on. Each one ran on a real starter site and was checked by reading the result back through the MCP. Round 4 then published test pages and measured them in Chrome.
+
+The result files are working records, so they are terse and use test IDs such as `L-4`. The [repo README](../README.md) has the plain-language summary and a list of terms, and the plan at the bottom of this file explains each ID.
 
 The original plan called for 3 runs per probe. Each probe ran once, on Webflow MCP beta v2.2.0. Test elements were removed after rounds 1 to 3, and the round 4 pages were left published so they could be measured.
 
 ## Reading order
 
-| File | Covers |
-| --- | --- |
-| [lumos.md](lumos.md) | Lumos classes, slots, props, variants, and `calc()` values |
-| [mast-and-client-first.md](mast-and-client-first.md) | Mast and Client-First classes, stacks, and component builds |
-| [conditionals.md](conditionals.md) | What the MCP can do with Webflow Conditionals, including a round-trip test |
-| [round-2.md](round-2.md) | Theme change cost, component cost, and replications |
-| [round-3.md](round-3.md) | Read-back exposure, formula variables, and class-string props on Mast |
-| [round-4-rendered.md](round-4-rendered.md) | Published pages, including 200% text and heading output |
-| [client-first-v3.md](client-first-v3.md) | What v3 documents, and the one v3 pattern tested live |
+| File | Covers | Main finding |
+| --- | --- | --- |
+| [lumos.md](lumos.md) | Lumos classes, slots, props, and variants | Classes work, but plain elements cannot go in slots and nested slots cannot be reached |
+| [mast-and-client-first.md](mast-and-client-first.md) | Mast and Client-First classes and component builds | New class stacks must be created level by level, and failed component builds leave orphans |
+| [conditionals.md](conditionals.md) | What the MCP can do with Webflow Conditionals | The MCP cannot read them, and a routine write silently deletes them |
+| [round-2.md](round-2.md) | The cost of theme changes and components | A dark section took 1 write on Lumos and 5 on Client-First |
+| [round-3.md](round-3.md) | Read-back exposure and formula variables | The MCP cannot write formula variables, and each starter depends on them to a different degree |
+| [round-4-rendered.md](round-4-rendered.md) | Published pages, 200% text, and heading output | Client-First's custom grid overflowed, Lumos lost its H1, and the `calc()` bug was only in the read-back |
+| [client-first-v3.md](client-first-v3.md) | What v3 documents, and the one v3 pattern tested live | v3's `grid-autofit` fixes the overflow, and the rest of v3 is untested |
 
-Read round 4 before relying on any `calc()` claim from the earlier files. Round 4 corrected them, and each affected file carries a note at the top.
+Read round 4 before relying on any `calc()` claim from the earlier files. Round 4 corrected them, and each affected file carries a note at the top. The exposure counts in rounds 2 and 3 are values that would be misreported if an agent rewrote them. They read back correctly until then.
 
 These files were edited for publication in three ways. Sections that discussed an unpublished planning document were removed, Webflow site ids and a note about a private skill file were removed, and this README replaced the original plan's "3 times" wording. Test results were not changed.
 

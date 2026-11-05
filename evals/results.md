@@ -1,95 +1,134 @@
-# E1 legibility evals: Client-First vs Mast vs Lumos (2026-11-02)
+# Model eval results (2026-11-02)
 
-Model-only evals (no Webflow MCP, no site). 228 isolated `claude -p` calls: no tools, MCP, skills or settings, neutral system prompt, empty working directory. Zero failed calls. Scripts, fixtures, raw outputs and scores are in this folder (`scripts/`, `fixtures/`, `raw/`, `raw/score-output.md`).
+These evals asked what Claude models know about Client-First, Mast, and Lumos on their own, with no Webflow MCP and no site. There were 228 separate `claude -p` calls, each with no tools, MCP, skills, or settings, a neutral system prompt, and an empty working folder. No call failed. The scripts, fixtures, raw outputs, and scores are all in this folder.
 
-First person in this file is the Claude agent that ran the evals, and "lead agent" is the Claude session that coordinated it. See the disclosures in the repo README.
+First person in this file means the Claude agent that ran the evals, and "lead agent" means the Claude session that coordinated it. See the disclosures in the [repo README](../README.md).
 
-## Pre-registered predictions
+## What was predicted, and what happened
 
-Hashed in `PREREGISTRATION.md` before the first call. "Advocate" and "Planning notes" are predictions from the advocate reports and an unpublished planning document. "Eval agent" is the agent's own prediction, labelled "Mine" in the pre-registration.
+The predictions are in `PREREGISTRATION.md`. "Advocate" and "planning notes" come from the advocate reports and an unpublished planning document. "Eval agent" is the agent's own prediction, labelled "Mine" in that file.
 
 | Eval | Prediction | Source | Result |
 | --- | --- | --- | --- |
-| E1a zero-shot | Mast scores highest | Advocate | **Wrong.** Mast came last on both models |
-| E1a zero-shot | CF highest, Mast lowest | Eval agent | Right on both models under the verified Lumos key (v2). CF's Sonnet lead over Lumos (1.37 vs 1.07) is not statistically significant |
-| E1b comprehension | CF best on structure questions, Mast best on spacing | Planning notes | **Not testable.** All three hit the ceiling on both question types |
-| E1b comprehension | Lumos best on the global-change question | Eval agent | Right (6/6 vs CF 4/6) |
-| E1c drift | Mast drifts least | Planning notes | **Wrong.** Mast drifted the most |
-| E1c drift | CF drifts more than Lumos | Eval agent | **Wrong.** CF drifted the least |
+| Writing from memory | Mast scores highest | Advocate | **Wrong.** Mast was last on Sonnet and tied for last with Lumos on Haiku |
+| Writing from memory | Client-First highest, Mast lowest | Eval agent | Mostly right. Client-First led on both models, but its Sonnet lead over Lumos is not reliable, and Mast tied Lumos on Haiku |
+| Reading a page | Client-First best on structure, Mast best on spacing | Planning notes | **Not testable.** All three scored 100% on both question types |
+| Reading a page | Lumos best on the card title question | Eval agent | Right, but this says little. The same agent wrote the test pages and knew only the Lumos page had a card title class |
+| Naming drift | Mast drifts least | Planning notes | **Wrong.** Mast tied Lumos for the most drift on all classes, and drifted most with `u-` utilities ignored |
+| Naming drift | Client-First drifts more than Lumos | Eval agent | **Wrong.** Client-First drifted the least |
 
-## Method
+## How each eval worked
 
-**E1a.** 10 layout intents × 3 frameworks × 2 models (`claude-haiku-5-5`, `claude-sonnet-5-5`) × 3 samples = 180 calls. The prompt names the framework and gives no docs. Scoring is deterministic against a key written beforehand (`scripts/e1a_key.py`, `scripts/vocab.py`): 2 means idiomatic, 1 means every class is valid in the framework but the answer isn't idiomatic, 0 means any class is invented or from another framework. Where a framework has no utility for an intent, its idiom is a well-formed custom class (CF flex/grid/margin-trim, Mast margin-trim). I made one post-hoc parsing fix: only the first line of each answer is scored, so a correct answer followed by an unrequested explanation isn't zeroed. That moved CF from 0.98 to 1.07.
+**Writing from memory (E1a).** There were 10 layout tasks, 3 frameworks, 2 models (`claude-haiku-5-5` and `claude-sonnet-5-5`), and 3 samples each, for 180 calls. The prompt named the framework and gave no docs. A script scored each answer against a key: 2 means the right approach, 1 means every class is real but the approach is not ideal, and 0 means at least one class is invented or from another framework. Where a framework has no utility for a task, the right approach is a well-formed custom class. That applies to 4 tasks on Client-First and 1 on Mast. I made one parsing fix after the runs, scoring only the first line of each answer, so a correct answer followed by an unrequested explanation was not zeroed. That moved Client-First from 0.98 to 1.07.
 
-**E1b.** One hand-written page per convention (hero with eyebrow, h1, paragraph, two buttons and an image, then a dark 3-card grid), with class names only and no CSS or framework names. 12 questions in four types: P spacing (4), S structure/identity (4), V variant/styling (3), G global change (1). 3 samples × 2 models × 3 fixtures = 18 calls. An answer is correct when it names the right element or class and none of the listed distractors.
+**Reading a page (E1b).** There was one hand-written page per framework: a hero, then a dark 3-card grid, with class names but no CSS or framework names. Models answered 12 questions in four groups: spacing (4), structure (4), styling variants (3), and one global change. With 3 samples, 2 models, and 3 pages, that made 18 calls. An answer was correct if it named the right element or class and none of the listed wrong ones.
 
-**E1c.** For each framework, a grammar summary of 108 to 124 words, then a request for JSON naming classes for the roles in three new components (17 roles in total). 10 Sonnet samples per framework, 30 calls. "Drift" is the number of distinct class strings per role across the 10 samples, so 1.0 means every sample agreed.
+**Naming drift (E1c).** Each framework got a summary of its naming rules, 108 to 124 words long, followed by a request to name the classes for 3 new components (17 elements in total). Sonnet did this 10 times per framework, for 30 calls. Drift is the number of different class strings per element across the 10 samples, so 1.0 means every sample agreed.
 
-## Results
+## Writing from memory
 
-### E1a: zero-shot generation (mean score 0–2; zero-scored answers in brackets)
+Mean score from 0 to 2, with the share of zero-scored answers in brackets.
 
-| Model | CF | Mast | Lumos |
+| Model | Client-First | Mast | Lumos |
 | --- | --- | --- | --- |
-| Haiku | **0.77** (18/30 zero) | 0.00 (30/30) | 0.00 (30/30) |
-| Sonnet | **1.37** (8/30) | 0.33 (24/30) | 1.07 (13/30) |
+| Haiku | **0.77** (18 of 30) | 0.00 (30 of 30) | 0.00 (30 of 30) |
+| Sonnet | **1.37** (8 of 30) | 0.33 (24 of 30) | 1.07 (13 of 30) |
 | Both | **1.07** | 0.17 | 0.53 |
-| Both, custom-class idioms excluded | 1.47 | 0.19 | 0.53 |
 
-**Key change (v1 → v2, after the runs).** The v1 key built Lumos's `u-` vocabulary from the naming doc and probe logs, plus some plausible but unverified families. The lead agent then checked the class list on the live Lumos v2 Starter through the Webflow MCP: `u-section`, `u-section-spacer`, `u-container-small|full` and `u-theme-dark|light|brand|inherit` exist; `u-section-large`, `u-container-large`, every `u-text-align-*` class and `is-secondary` do not, because Lumos buttons use component variants rather than combos. v2 limits Lumos `u-` classes to the verified and documented set (`scripts/vocab.py`, `scripts/e1a_key.py`; the pre-registered v1 files are in `preregistered/scripts/` and v1 scores are in `raw/scores-v1.json`). v1 → v2 for Lumos: Haiku 0.07 → 0.00, Sonnet 1.33 → 1.07, both models 0.70 → 0.53. CF and Mast are unchanged. 14 answers changed:
-- Up: `u-section u-theme-dark` for the dark section (Sonnet, 3 answers, 0 → 2); `u-container u-section` for section padding (Sonnet, 2 answers, 0 → 1, valid but the idiom is a `*_wrap` custom class).
-- Down: `u-text-align-center u-margin-bottom-small` (4 answers, 2 → 0); `u-container-large` (Sonnet, 3 answers, 2 → 0); `u-flex-horizontal u-align-items-center u-justify-content-between` (Sonnet, 2 answers, 2 → 0), because only `u-flex-horizontal-wrap|nowrap` is verified, not bare `u-flex-horizontal`. That last one is the closest call. Counting bare `u-flex-horizontal` as valid would raise Lumos Sonnet to 1.20.
-- Same: `button is-secondary` scores 0 under both keys.
+### How solid is the ranking?
 
-**Sonnet ranking, CF vs Lumos:** on the verified vocabulary CF leads, 1.37 vs 1.07. The key no longer flips the ranking: CF stays ahead even if bare `u-flex-horizontal` counts. With 30 answers each, though, the difference (+0.30) is not significant: the bootstrap 95% interval is −0.17 to +0.77, and in 12% of resamples Lumos ties or wins. The ranking is CF ahead of Lumos on Sonnet; the gap is still within sampling noise at this sample size. Mast is last under every key.
+Client-First's lead over Mast holds up under every check here. Its lead over Lumos does not, because there are only 10 tasks and the two frameworks are strong on different ones. Client-First wins section padding, centered text, the secondary button, the large container, and the h3 styled as an h2. Lumos wins margin trim, the card grid, and the dark section.
 
-Per intent, CF wins section padding (2.00), the h2-styled h3 (2.00) and the secondary button. Lumos wins margin trim (Sonnet answered `u-margin-trim` 3/3), the card grid (`card_list u-grid-autofit`) and the dark section (`u-section u-theme-dark`). Under v2 it scores 0 on centered text and the large container, because Sonnet's answers there use classes that don't exist (`u-text-align-center`, `u-container-large`). CF scored 0.00 on the flex row: CF has no flex utility, and the models invented one instead of reaching for a custom class.
+This table uses the same tasks for every framework.
 
-**The finding that matters most is that CF is the default prior.** When a model doesn't know a framework, it answers in Client-First/Relume vocabulary:
+| Tasks counted | Model | Client-First | Mast | Lumos |
+| --- | --- | --- | --- | --- |
+| All 10 | Sonnet | 1.37 | 0.33 | 1.07 |
+| All 10 | Both | 1.07 | 0.17 | 0.53 |
+| Without Client-First's 4 custom-class tasks | Sonnet | 1.72 | 0.44 | 0.78 |
+| Without Client-First's 4 custom-class tasks | Both | 1.47 | 0.22 | 0.39 |
+| Without the secondary button and centered text | Sonnet | 1.21 | 0.17 | 1.33 |
+| Without the secondary button and centered text | Both | 1.00 | 0.08 | 0.67 |
 
-- Haiku's "Lumos" answers: `padding-global padding-section-large`, `heading-style-h2`, `container-large`. 14 of its 30 Lumos answers are valid CF and invalid Lumos.
-- Sonnet's "Mast" answer for section padding was `padding-global padding-section-large` in 3 of 3 samples. In total, 9 Haiku and 5 Sonnet Mast answers were valid CF.
-- Haiku refused Mast outright 5 times: "I don't know the No-Code Supply Mast naming convention".
-- Mast-specific vocabulary appeared only for `u-text-center u-mb-sm` (Sonnet, 3 of 3) and once for `h2`. There was never a `row`, `col-*`, `cc-*` or `u-mode-dark`.
+The custom-class rule is lenient, because any well-formed name scores 2. It did not actually lift Client-First, though. Its score rises when those tasks are removed, because models mostly invented utilities there instead of writing a custom class. Client-First scored 0.00 on the flex row for this reason.
+
+The secondary button and centered text are where Lumos did worst, because the models invented classes such as `u-text-align-center`. Dropping them removes real failures, so that row is not fairer. It shows how much two tasks can move the ranking.
+
+`scripts/bootstrap.py` estimates how far each gap could move by chance. It resamples the 10 tasks, because the 3 answers to one task are not independent. A range that crosses zero means the data cannot say which framework is ahead.
+
+| Gap | Size | Likely range (95%) |
+| --- | --- | --- |
+| Client-First minus Lumos, Sonnet | +0.30 | −0.47 to +1.07 |
+| Client-First minus Lumos, both models | +0.53 | −0.08 to +1.12 |
+| Client-First minus Mast, both models | +0.90 | +0.43 to +1.35 |
+
+An earlier version of this file reported −0.17 to +0.77 for the Sonnet gap. That method treated all 30 answers as independent. The script still prints it for comparison. Ten tasks is a small number to resample, so treat these ranges as rough.
+
+### How the Lumos key changed
+
+The original key built Lumos's `u-` classes from the naming docs and test logs, plus some plausible but unverified families. After the runs, the lead agent checked the class list on the live Lumos v2 Starter through the MCP. `u-section`, `u-section-spacer`, `u-container-small`, `u-container-full`, and the `u-theme-*` classes exist. `u-section-large`, `u-container-large`, every `u-text-align-*` class, and `is-secondary` do not, because Lumos buttons use component variants rather than combo classes.
+
+The revised key is limited to classes checked against the starter. It lowered Lumos on Haiku from 0.07 to 0.00, on Sonnet from 1.33 to 1.07, and on both models from 0.70 to 0.53. Client-First and Mast did not change. Of the 14 answers that changed, 5 went up and 9 went down:
+
+- **Up:** `u-section u-theme-dark` for the dark section (Sonnet, 3 answers, 0 to 2), and `u-container u-section` for section padding (Sonnet, 2 answers, 0 to 1).
+- **Down:** `u-text-align-center u-margin-bottom-small` (4 answers, 2 to 0), `u-container-large` (Sonnet, 3 answers, 2 to 0), and `u-flex-horizontal u-align-items-center u-justify-content-between` (Sonnet, 2 answers, 2 to 0).
+
+The last of those is the closest call, because only `u-flex-horizontal-wrap` and `-nowrap` exist on the starter. Counting bare `u-flex-horizontal` would raise Lumos on Sonnet to 1.20. `button is-secondary` scored 0 under both keys.
+
+A later review found two mistakes in the revised key. It said Lumos had no text alignment utility, but `u-alignment-center` exists. It also required `is-secondary` for the secondary button while rejecting that class, so that task could not score 2. Both rules are fixed, and no score changed, because no answer used those classes.
+
+The original key and its scores are in `preregistered/scripts/` and `raw/scores-v1.json`.
+
+### Client-First is the default guess
+
+The finding that matters most is that when a model does not know a framework, it answers in Client-First and Relume vocabulary.
+
+- Haiku's "Lumos" answers included `padding-global padding-section-large`, `heading-style-h2`, and `container-large`. 14 of its 30 Lumos answers were valid Client-First and invalid Lumos.
+- Sonnet's "Mast" answer for section padding was `padding-global padding-section-large` in 3 of 3 samples. In total, 9 Haiku and 5 Sonnet Mast answers were Client-First classes.
+- Haiku refused Mast outright 5 times, with answers such as "I don't know the No-Code Supply Mast naming convention".
+- Real Mast vocabulary appeared only for `u-text-center u-mb-sm` (Sonnet, 3 of 3) and once for `h2`. There was never a `row`, `col-*`, `cc-*`, or `u-mode-dark`.
 - Sonnet answered Mast's margin trim with Lumos's `u-margin-trim` (2 of 3), and its flex row with Tailwind's `flex-row items-center justify-between` (3 of 3).
-- CF wasn't clean either. Haiku used `btn is-secondary` and `margin-bottom-small` (CF uses two classes there). For "large container" Sonnet answered `max-width-large` 3 of 3, and for margin trim it invented `spacing-clean` 3 of 3.
+- Client-First was not clean either. Haiku used `btn is-secondary` and `margin-bottom-small`. For "large container" Sonnet answered `max-width-large` 3 of 3, and for margin trim it invented `spacing-clean` 3 of 3.
 
-### E1b: same-DOM comprehension (% correct)
+## Reading a page
 
-| Slice | CF | Mast | Lumos |
+| Question group | Client-First | Mast | Lumos |
 | --- | --- | --- | --- |
-| All | 97% (70/72) | 99% (71/72) | 100% (72/72) |
-| P spacing | 100% | 100% | 100% |
-| S structure | 100% | 100% | 100% |
-| V variant | 100% | 100% | 100% |
-| G "make only card titles bigger" | 67% (4/6) | 83% (5/6) | **100%** (6/6) |
+| All | 97% (70 of 72) | 99% (71 of 72) | 100% (72 of 72) |
+| Spacing | 100% | 100% | 100% |
+| Structure | 100% | 100% | 100% |
+| Styling variants | 100% | 100% | 100% |
+| "Make only the card titles bigger" | 67% (4 of 6) | 83% (5 of 6) | 100% (6 of 6) |
 
-There is a ceiling effect. When the names are on the page, both models read all three conventions perfectly, so this fixture can't separate them. The only misses were on Q7. The CF and Mast fixtures have no class that belongs to the card title alone (`heading-style-h5`, `h5`), so the correct answer was "none". Sonnet answered `heading-style-h5` twice and `h5` once, and restyling those would change every h5-styled heading on the site. Lumos gives the title its own class (`features_card_title`), so the answer was obvious.
+When the names are on the page, both models read all three conventions almost perfectly, so this test cannot separate them.
 
-### E1c: naming drift (Sonnet, 10 samples, 17 roles)
+All the misses were on the card title question, and that question reflects how the pages were written. Only the Lumos page has a class for the card title (`features_card_title`). The Client-First and Mast pages use `heading-style-h5` and `h5`, so the correct answer there was "none", and Sonnet answered with the shared class 3 times. A real Client-First page would normally give the title its own class, so this is not evidence against Client-First.
 
-| Metric | CF | Mast | Lumos |
+## Naming drift
+
+| Measure | Client-First | Mast | Lumos |
 | --- | --- | --- | --- |
-| Distinct class strings per role (lower is better) | **1.41** | 2.29 | 2.29 |
-| Distinct, ignoring `u-` utilities | **1.41** | 1.71 | 1.53 |
-| Tokens that follow the grammar | 100% | 99.1% | 100% |
-| Samples with a non-conforming class | 0 | 2* | 0 |
+| Different class strings per element (lower is better) | **1.41** | 2.29 | 2.29 |
+| Same, ignoring `u-` utilities | **1.41** | 1.71 | 1.53 |
+| Classes that follow the naming rules | 100% | 99.1% | 100% |
+| Samples with a class that breaks the rules | 0 | 2* | 0 |
 | Classes per element | 1.06 | 1.29 | 1.26 |
 
-\*`card team-card` is a single-level custom class with no underscore. It's arguably legal Mast, so this is a judgment call.
+\*`card team-card` is a single-level custom class with no underscore. It is arguably legal Mast, so this is a judgment call.
 
 The drift looks different in each framework:
 
-- **CF:** the main split was whether to repeat the component name, as in `pricing_card-price` (8) vs `pricing_price` (2). The badge got three names: `pricing_popular-badge` 6, `pricing_card-badge` 2, `pricing_badge` 2.
-- **Mast:** mostly varies its choices of base class and stacked utility: title `h3` 5 / `h4` 4; price `h2` / `h2 u-mb-md` / `h2 u-mb-sm`; FAQ answer `rich-text` 5 / `paragraph-sm` 5. The closed vocabulary doesn't make the choices deterministic. Models still pick which closed classes to stack.
-- **Lumos:** `pricing_card is-featured` 7 vs `is-popular` 3; FAQ question `faq_question` 4 / `faq_item_question` 3 / plus `u-text-style-large` on some. The FAQ answer and toggle icon each got 3 to 4 variants.
+- **Client-First:** the main split was whether to repeat the component name, as in `pricing_card-price` (8) and `pricing_price` (2). The badge got three names: `pricing_popular-badge` 6, `pricing_card-badge` 2, and `pricing_badge` 2.
+- **Mast:** mostly varied which classes it picked and stacked. The title was `h3` 5 times and `h4` 4 times, and the FAQ answer was `rich-text` 5 times and `paragraph-sm` 5 times. A closed list of classes does not make the choices identical, because models still pick which ones to stack.
+- **Lumos:** the card was `pricing_card is-featured` 7 times and `is-popular` 3 times, and the FAQ question was `faq_question` 4 times and `faq_item_question` 3 times. The FAQ answer and toggle icon each got 3 to 4 versions.
 
-## Limitations
+## Limits
 
-- **Sample size.** 3 samples per cell in E1a (n=30 per framework and model), 6 per fixture question in E1b, and 10 in E1c. A difference of 0.1–0.2 on E1a is noise. One model family only (Claude), not three.
-- **I wrote the keys, the fixtures and the summaries.** The keys were hashed before the runs. The Lumos `u-` vocabulary was revised after the runs (v2, described above) to match the class list verified on the live Starter. The revision cut both ways: 5 answers went up and 9 went down. The pre-registered v1 scores are kept. Bare `u-flex-horizontal` is still unverified and is the only Lumos call that changes Lumos's Sonnet score (1.07 vs 1.20); it doesn't change the ranking. The CF and Mast vocabularies were not verified on live starters the same way.
-- **The custom-class idiom is lenient.** Any well-formed name scores 2. That helps CF more than the others (4 intents vs 1 for Mast), so the table also reports scores with those intents excluded.
-- **E1b is hand-written and too easy.** The names are self-describing in every convention, so the result says more about the fixture than the frameworks. A harder version would leave out spacing and theming names, or test whether a model can predict CSS effects.
-- **The E1c summaries contain worked examples** (`pricing_card is-featured` and similar in all three), which pushes the models toward the same answers and understates drift for every framework. The Mast summary describes base classes plus utilities, which invites more classes per element, so its higher per-role count is partly how the grammar is built rather than naming noise. The utility-free row (1.41 / 1.71 / 1.53) is the fairer comparison.
-- **Lint detection was not run.** The planned violation-detection eval was out of scope for this run.
-- **Intents and questions are mine.** A Mast or Lumos advocate might pick intents that favour their framework, such as column spans per breakpoint or theme switching.
+- **Small samples.** There are 3 samples per task in the memory test, 6 per question in the reading test, and 10 in the drift test. Only Claude models were used.
+- **I wrote the keys, pages, and summaries.** The Lumos key was revised after the runs, as described above. Bare `u-flex-horizontal` is the one remaining judgment call that would change Lumos's score.
+- **Client-First was scored on v2 naming.** Client-First v3 came out shortly before these runs, and its one-class spacing such as `margin-bottom-small` still scores 0 here.
+- **The class checks have limits.** The Lumos key was checked through the MCP. Client-First and Mast were checked later against the published stylesheets of the test sites. Mast did not change, and Client-First moved from 1.07 to about 1.05.
+- **The reading test is hand-written and too easy.** The names describe themselves in every convention, so the result says more about the pages than the frameworks.
+- **The drift summaries contain worked examples**, such as `pricing_card is-featured`, which push models toward the same answers and understate drift for all three. The Mast summary describes base classes plus utilities, which invites more classes per element. That is why the row ignoring `u-` utilities is the fairer comparison.
+- **The planned test of spotting naming violations was not run.**
+- **The tasks and questions are mine.** A Mast or Lumos advocate might pick tasks that favor their framework, such as column spans per breakpoint or theme switching.
