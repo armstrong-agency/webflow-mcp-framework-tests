@@ -31,7 +31,6 @@ Mast and Lumos have real strengths. Lumos's theming is better than anything I te
 
 ## Disclosures
 
-- **My position.** I have used Client-First for years, I contributed to the Client-First V3 docs with the Finsweet team, and my video argues for Client-First.
 - **Who ran the tests.** Claude Code agents ran the tests under my direction. I checked the conditionals result in the Webflow Designer. First person in the result files ("I", "Mine") usually means the agent that ran that test.
 - **Who wrote the scoring.** The same agents wrote the fixtures, scoring keys, and test tasks, and they knew I expected Client-First to win. A Mast or Lumos expert might choose different tests.
 - **Which models.** The model evals used Claude Haiku and Claude Sonnet only. They say nothing about other model families.
