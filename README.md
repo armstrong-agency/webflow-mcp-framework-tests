@@ -29,8 +29,6 @@ This section is my opinion. I have used Client-First for years and I contributed
 
 Mast and Lumos have real strengths. Lumos's theming is better than anything I tested on Client-First, and Mast's components held up well in the hero test. The MCP will also improve, and these frameworks will gain the most when it does. For agent work through the MCP today, I still choose Client-First.
 
-The video makes this case more strongly than the tests can. See [where it goes further](#where-the-video-goes-further-than-these-tests).
-
 ## Disclosures
 
 - **My position.** I have used Client-First for years, I contributed to the Client-First V3 docs with the Finsweet team, and my video argues for Client-First.
@@ -162,17 +160,9 @@ The only misses came on "make only the card titles bigger", where Lumos got 6 of
 - **Raw MCP call logs are not published.** The probe files are written summaries of those calls. The model evals are the exception, because their raw outputs are all here.
 - **Some comparisons cover only two frameworks.** The theme and icon-row tests did not run on Mast.
 - **Nothing here is a full build.** No test had an agent build a complete site from one brief on each framework.
-
-## Where the video goes further than these tests
-
-The video is my opinion, informed by these tests and by years of using Client-First. In these places it says more than the tests show, so trust the tests over the video.
-
-- **Scope.** The video calls Client-First the best way to work in Webflow. These tests cover agent work through the MCP, on two Claude models, mostly in single runs.
-- **Client-First v3.** The video is framed around v3, but the tests ran on a v2-era site, and only the `grid-autofit` pattern was tested on v3.
-- **Lumos.** The tests cannot separate Client-First from Lumos on what Sonnet knows. Models reaching for Client-First names on a real Lumos site is my experience.
-- **Components.** The tests found specific failures, not a general failure rate. Putting a component in a slot worked, and Mast built the hero test in the fewest calls with no failures. Client-First was not tested with components, and the same MCP limits apply if you build them.
-
-The 200% text overflow is a smaller point. It came from a grid the agent wrote, and v3's `grid-autofit` fixed it, while Mast and Lumos passed with the grids they ship.
+- **The scope is the MCP.** These tests cover agent work through the MCP, on two Claude models. They do not compare the frameworks for work outside it.
+- **The model evals used no site.** They show what models know from memory, not how an agent behaves on a real Lumos or Mast site.
+- **Component results are specific failures, not a failure rate.** Client-First was not tested with components, and the same MCP limits would apply to any components built on it.
 
 ## What could change these results
 
