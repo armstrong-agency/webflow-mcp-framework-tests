@@ -29,6 +29,8 @@ This section is my opinion. I have used Client-First for years and I contributed
 
 Mast and Lumos have real strengths. Lumos's theming is better than anything I tested on Client-First, and Mast's components held up well in the hero test. The MCP will also improve, and these frameworks will gain the most when it does. For agent work through the MCP today, I still choose Client-First.
 
+The video makes this case more strongly than the tests can. See [where it goes further](#where-the-video-goes-further-than-these-tests).
+
 ## Disclosures
 
 - **My position.** I have used Client-First for years, I contributed to the Client-First V3 docs with the Finsweet team, and my video argues for Client-First.
