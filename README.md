@@ -21,9 +21,9 @@ All tests ran on 2026-11-02 against Webflow MCP beta v2.2.0. The MCP changes oft
 
 ## Disclosures
 
-- **Author's interest.** The author has used Client-First for years, contributed to the Client-First V3 docs, and has published a video arguing for Client-First.
-- **Who ran the tests.** Claude Code agents ran the tests under the author's direction. The author checked the conditionals result in the Webflow Designer. First person in the result files ("I", "Mine") usually means the agent that ran that test.
-- **Who wrote the scoring.** The same agents wrote the fixtures, scoring keys, and test tasks, and they knew the author expected Client-First to win. A Mast or Lumos expert might choose different tests.
+- **Author.** These tests were directed by Emmett Armstrong, a Client-First certified expert and a contributor to the Client-First docs. Armstrong has also published a video arguing for Client-First.
+- **Who ran the tests.** Claude Code agents ran the tests under Armstrong's direction. Armstrong checked the conditionals result in the Webflow Designer. First person in the result files ("I", "Mine") usually means the agent that ran that test.
+- **Who wrote the scoring.** The same agents wrote the fixtures, scoring keys, and test tasks, and they knew Armstrong expected Client-First to win. A Mast or Lumos expert might choose different tests.
 - **Which models.** The model evals used Claude Haiku and Claude Sonnet only. They say nothing about other model families.
 
 ## Terms used here
@@ -145,7 +145,7 @@ The only misses came on "make only the card titles bigger", where Lumos got 6 of
 ## Limits
 
 - **One run per test.** The test plan called for 3 runs, but each test ran once. The orphan, slot-name, order-sensitivity, and `calc` read-back findings were repeated. The rest were not. See [the replication list](probes/README.md#what-was-repeated).
-- **Client-First v3 was mostly not tested.** The test site is v2-era. Of its 169 non-custom classes, 107 also appear on the v3 cloneable, including the core structure, button, and heading classes. v3 replaces the paired spacing classes such as `margin-bottom margin-small` with single classes, and adds `grid-autofit`. Only `grid-autofit` was tested live, with a literal `20rem` in place of v3's variable. Everything else in the [v3 notes](probes/client-first-v3.md) comes from Finsweet's documentation.
+- **Client-First v3 was mostly not tested.** The test site is v2-era. Armstrong's assessment is that the changes from v2 to v3 are mostly minor and that the core structure is the same. A stylesheet comparison is consistent with the core carrying over: 107 of the site's 169 non-custom classes appear on the v3 cloneable, including the structure, button, and heading classes. v3 replaces paired spacing classes such as `margin-bottom margin-small` with single classes, and adds `grid-autofit`. No full build was done on v3, so these results may or may not carry over. Only `grid-autofit` was tested live, with a literal `20rem` in place of v3's variable. Everything else in the [v3 notes](probes/client-first-v3.md) comes from Finsweet's documentation.
 - **The 200% text test is a stand-in.** It sets the root font size inside an iframe rather than changing a real browser preference.
 - **Raw MCP call logs are not published.** The probe files are written summaries of those calls. The model evals are the exception, because their raw outputs are all here.
 - **Some comparisons cover only two frameworks.** The theme and icon-row tests did not run on Mast.
