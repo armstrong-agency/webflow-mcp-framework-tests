@@ -21,7 +21,7 @@ All tests ran on 2026-11-02 against Webflow MCP beta v2.2.0. The MCP changes oft
 
 ## Disclosures
 
-- **Author.** These tests were directed by Emmett Armstrong, a Client-First certified expert and a contributor to the Client-First docs. Emmett has also published a video arguing for Client-First.
+- **Author.** These tests were directed by Emmett Armstrong, a Client-First certified expert and a contributor to the Client-First docs. 
 - **Who ran the tests.** Claude Code agents ran the tests under Emmett's direction. Emmett checked the conditionals result in the Webflow Designer. First person in the result files ("I", "Mine") usually means the agent that ran that test.
 - **Who wrote the scoring.** The same agents wrote the fixtures, scoring keys, and test tasks, and they knew Emmett expected Client-First to win. A Mast or Lumos expert might choose different tests.
 - **Which models.** The model evals used Claude Haiku and Claude Sonnet only. They say nothing about other model families.
